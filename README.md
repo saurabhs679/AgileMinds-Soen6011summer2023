@@ -1,9 +1,10 @@
 ![Jobseekr](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/dfd02199-721a-4708-a491-d8d7fabbf6cb)
 
-# JobSeekr
-The objective of this project is to develop a career services platform named JobSeekr that connects students seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches.
+# SOEN 6011: JobSeekr
+The objective of this project is to develop a career services platform named "JobSeekr" that connects students seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
 
-## Features
+## Project Methodology & Features
+The project will follow an agile methodology which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team to promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
 ### User Registration and Login:
 
 Employers and students can create accounts by providing their details and selecting a unique username and password.
@@ -61,7 +62,7 @@ The career services platform will be developed using modern web technologies, su
 Front-end: HTML, CSS, JavaScript, and a modern web framework like React or Angular.
 Back-end: A server-side programming language like Python, Java, or Node.js, along with a web framework like Django, Spring Boot, or Express.js.
 Database: A relational database management system (RDBMS) such as MySQL, PostgreSQL, or Oracle.
-
+  
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
 With its user-friendly interface and robust features, the platform aims to revolutionize the way students find jobs and employers identify top talent. 
