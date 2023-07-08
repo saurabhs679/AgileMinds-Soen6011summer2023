@@ -6,10 +6,11 @@ The objective of this project is to develop a career services platform named "Jo
 ## Team Members
 |Student ID| Name |
 |:---------:|:---------:|
-|40236181|Papry	Barua
 |40226298|Saurabh Sharma
 |40227757|Madhava Sai Kumar Karnati
 |40229989|Prashant Banavali 
+|40230004|Srikar Hasthi
+|40236181|Papry	Barua
 |40236936|Venkata Srikar Vishnu Datta Akela
 
 ## Project Methodology
