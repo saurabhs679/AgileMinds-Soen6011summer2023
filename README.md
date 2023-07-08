@@ -16,10 +16,10 @@ Employers can add new job offers, specifying the required qualifications, job de
 They can select candidates who have applied for an offer and schedule interviews with them.
 The dashboard provides a comprehensive overview of all job postings, applications, and interview schedules.
 
-### Student Dashboard:
-Students have their own dashboard where they can create and modify their profiles.
+### Student/Candidate Dashboard:
+Students/Candidates have their own dashboard where they can create and modify their profiles.
 They can build and upload their resumes, highlighting their skills, education, and work experience.
-Students can search and browse job offers based on their preferences and qualifications.
+They can search and browse job offers based on their preferences and qualifications.
 They can apply for desired job postings through the platform.
 The dashboard allows students to track the status of their applications and receive notifications when they are called for an interview.
 
@@ -34,9 +34,10 @@ In addition to the main users mentioned above, the following additional users an
 ### Alumni Network:
 Create a dedicated section for alumni who can offer mentorship, advice, and job referrals to current students.
 Alumni can create profiles showcasing their career achievements and connect with other alumni and students.
+It serves as a platform for fostering connections, collaboration, and support among alumni and the institution itself.
 
 ### Career Advisors:
-Include a role for career advisors who can provide guidance to students on resume building, interview preparation, and career planning.
+Include a role for career advisors who can provide guidance to students on resume building and review, interview preparation, and career planning.
 Career advisors can schedule appointments with students and conduct virtual counselling sessions.
 
 ### Event Management:
@@ -47,6 +48,7 @@ Students can register for events, attend presentations, and engage with employer
 ### Skill Assessments:
 Integrate skill assessment tests to help students evaluate their strengths and identify areas for improvement.
 The platform can recommend relevant job opportunities based on the results of these assessments.
+Candidates can post the assessment results in their profiles.
 
 ### System Security
 The career services platform prioritizes the security and confidentiality of user data:
