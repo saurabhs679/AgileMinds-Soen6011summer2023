@@ -3,10 +3,10 @@
 # SOEN 6011: JobSeekr
 The objective of this project is to develop a career services platform named "JobSeekr" that connects students seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
 
-## Project Methodology & Features
+## Project Methodology
 The project will follow an agile methodology which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team to promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
+## Features
 ### User Registration and Login:
-
 Employers and students can create accounts by providing their details and selecting a unique username and password.
 Users can securely login using their registered email and password.
 
