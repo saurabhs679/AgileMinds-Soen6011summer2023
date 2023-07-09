@@ -17,7 +17,7 @@ This project aims to develop a career services platform named "JobSeekr" that co
 |40236936|Venkata Srikar Vishnu Datta Akela|srikarvishnudatta@gmail.com|srikarvishnudatta| Implementation Manager|
 
 ## Project Approach and Technology:
-The project will follow an agile methodology which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team to promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
+The project will follow an agile methodology, which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
 ## Features
 ### User Registration and Login:
 Employers and students can create accounts by providing their details and selecting a unique username and password.
@@ -31,19 +31,19 @@ They can select candidates who have applied for an offer and schedule interviews
 The dashboard provides a comprehensive overview of all job postings, applications, and interview schedules.
 
 ### Student/Candidate Dashboard:
-Students/Candidates have their own dashboard where they can create and modify their profiles.
+Students/Candidates have their own dashboards where they can create and modify their profiles.
 They can build and upload their resumes, highlighting their skills, education, and work experience.
-They can search and browse job offers based on their preferences and qualifications.
+They can search for and browse job offers based on their preferences and qualifications.
 They can apply for desired job postings through the platform.
 The dashboard allows students to track the status of their applications and receive notifications when they are called for an interview.
 
 ### Admin Management:
-The admin has privileged access to manage all user profiles and job postings, and track system activities.
+The admin has privileged access to manage all user profiles and job postings and track system activities.
 They can review and moderate user-generated content to ensure compliance with platform guidelines.
 The admin is responsible for maintaining the security and integrity of the system.
 
 ## Additional Functionalities
-In addition to the main users mentioned above, the following additional users and functionalities can be implemented for enhanced user experience:
+In addition to the main users mentioned above, the following additional users and functionalities can be implemented for an enhanced user experience:
 
 ### Alumni Network:
 Create a dedicated section for alumni who can offer mentorship, advice, and job referrals to current students.
@@ -52,7 +52,7 @@ It serves as a platform for fostering connections, collaboration, and support am
 
 ### Career Advisors:
 Include a role for career advisors who can provide guidance to students on resume building and review, interview preparation, and career planning.
-Career advisors can schedule appointments with students and conduct virtual counselling sessions.
+Career advisors can schedule appointments with students and conduct virtual counseling sessions.
 
 ### Event Management:
 Implement a feature to host virtual career fairs, workshops, and networking events.
