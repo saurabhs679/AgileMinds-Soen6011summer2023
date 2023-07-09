@@ -1,19 +1,22 @@
+# Course Project for SOEN-6011 : SOFTWARE ENGINEERING PROCESS - SUMMER 2023 (Team: AgileMinds)
 ![Jobseekr](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/dfd02199-721a-4708-a491-d8d7fabbf6cb)
 
-# SOEN 6011: JobSeekr
-The objective of this project is to develop a career services platform named "JobSeekr" that connects students seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
+## Project Title : JobSeekr
+Tagline: Unlock your Potential, Discover Opportunities
+## Project Description:
+This project aims to develop a career services platform named "JobSeekr" that connects students/candidates seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students/candidates to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
 
-## Team Members
-|Student ID| Name |
-|:---------:|:---------:|
-|40226298|Saurabh Sharma
-|40227757|Madhava Sai Kumar Karnati
-|40229989|Prashant Banavali 
-|40230004|Srikar Hasthi
-|40236181|Papry	Barua
-|40236936|Venkata Srikar Vishnu Datta Akela
+## Team Members and Roles
+|Student ID| Name | Email | GitHub | Role
+|:---------:|:---------:|:---------:|:---------:|:---------:|
+|40226298|Saurabh Sharma|saurabhs679@gmail.com|saurabhs679| Product Owner|
+|40227757|Madhava Sai Kumar Karnati|madhavrockzz007@gmail.com| Madhava5| Quality Manager|
+|40229989|Prashant Banavali | prashant.banavali@mail.concordia.ca| PrashantBanavali | Scrum Master |
+|40230004|Srikar Hasthi|hsrikar1999@gmail.com|SrikarHasthi| Support Manager|
+|40236181|Papry	Barua|paprybarua91@gmail.com|papry04| Design Manager|
+|40236936|Venkata Srikar Vishnu Datta Akela|srikarvishnudatta@gmail.com|srikarvishnudatta| Implementation Manager|
 
-## Project Methodology
+## Project Approach and Technology:
 The project will follow an agile methodology which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team to promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
 ## Features
 ### User Registration and Login:
