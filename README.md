@@ -80,9 +80,9 @@ Regular security audits and vulnerability assessments are conducted to identify 
 
 ## Technologies Used
 The career services platform will be developed using modern web technologies, such as:
-Front-end: HTML, CSS, JavaScript, and a modern web framework like React or Angular.
-Back-end: A server-side programming language like Python, Java, or Node.js, along with a web framework like Django, Spring Boot, or Express.js.
-Database: A relational database management system (RDBMS) such as MySQL, PostgreSQL, or Oracle.
+Front-end: HTML, CSS, JavaScript, and a modern web framework like React.
+Back-end: A server-side programming language like Node.js.
+Database: A non-relational database management system like MongoDB.
   
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
