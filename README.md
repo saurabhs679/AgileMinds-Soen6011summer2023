@@ -89,3 +89,6 @@ The career services platform provides a comprehensive solution for job seekers a
 With its user-friendly interface and robust features, the platform aims to revolutionize the way students find jobs and employers identify top talent. 
 The additional functionalities proposed offer opportunities for further expansion and customization. 
 By leveraging the power of the internet and modern technologies, this platform empowers users to navigate the job market with ease and efficiency.
+
+----
+Contact Us: [support@agileminds.com](mailto:saurabhs679@gmail.com;madhavrockzz007@gmail.com;prashant.banavali@mail.concordia.ca;hsrikar1999@gmail.com;paprybarua91@gmail.com;srikarvishnudatta@gmail.com;)
