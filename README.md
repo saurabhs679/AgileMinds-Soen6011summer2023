@@ -92,3 +92,4 @@ By leveraging the power of the internet and modern technologies, this platform e
 
 ----
 Contact Us: [support@agileminds.com](mailto:saurabhs679@gmail.com;madhavrockzz007@gmail.com;prashant.banavali@mail.concordia.ca;hsrikar1999@gmail.com;paprybarua91@gmail.com;srikarvishnudatta@gmail.com;)
+                                                                                                                                        © 2023, AgileMinds
