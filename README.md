@@ -9,7 +9,7 @@ This project aims to develop a career services platform named "JobSeekr" that co
 ## Team Members and Roles
 |Student ID| Name | Email | GitHub | Role
 |:---------:|:---------:|:---------:|:---------:|:---------:|
-|40226298|Saurabh Sharma|saurabhs679@gmail.com|saurabhs679| Product Owner|
+|40226298|Saurabh Sharma|saurabhs679@gmail.com/saurabh.sharma@mail.concordia.ca|saurabhs679| Product Owner|
 |40227757|Madhava Sai Kumar Karnati|madhavrockzz007@gmail.com| Madhava5| Quality Manager|
 |40229989|Prashant Banavali | prashant.banavali@mail.concordia.ca| PrashantBanavali | Scrum Master |
 |40230004|Srikar Hasthi|hsrikar1999@gmail.com|SrikarHasthi| Support Manager|
