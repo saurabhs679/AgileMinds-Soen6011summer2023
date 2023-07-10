@@ -1,7 +1,7 @@
 # Course Project for SOEN-6011 : SOFTWARE ENGINEERING PROCESS - SUMMER 2023 (Team: AgileMinds)
 ![Jobseekr](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/dfd02199-721a-4708-a491-d8d7fabbf6cb)
 
-## Table of contents
+## Table of Contents
 <!--ts-->
    * [Project Title : JobSeekr](#project-title--jobseekr)
    * [Description of the Project](#description-of-the-project)
@@ -10,6 +10,8 @@
    * [Technologies Used](#technologies-used)
    * [Conclusion](#conclusion)
 <!--te-->
+## GitHub Link:
+GitHub repository link : https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git
 
 ## Project Title : JobSeekr
 Tagline: Unlock your Potential, Discover Opportunities
