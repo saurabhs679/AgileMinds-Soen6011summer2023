@@ -1,4 +1,4 @@
-# Course Project for SOEN-6011 : SOFTWARE ENGINEERING PROCESS - SUMMER 2023 (Team: AgileMinds)
+# Course Project for SOEN-6011: SOFTWARE ENGINEERING PROCESSES - SUMMER 2023 (Team: AgileMinds)
 ![Jobseekr](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/dfd02199-721a-4708-a491-d8d7fabbf6cb)
 
 ## Table of Contents
@@ -11,10 +11,10 @@
    * [Conclusion](#conclusion)
 <!--te-->
 ## GitHub Link:
-GitHub repository link : https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git
+GitHub repository link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git
 
-## Project Title : JobSeekr
-Tagline: Unlock your Potential, Discover Opportunities
+## Project Title: JobSeekr
+Tagline: Unlock Your Potential, Discover Endless Opportunities
 ## Description of the Project
 This project aims to develop a career services platform named "JobSeekr" that connects students/candidates seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students/candidates to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
 
@@ -33,7 +33,7 @@ The project will follow an agile methodology, which is an iterative and incremen
 ### Features
 #### User Registration and Login
 Employers and students can create accounts by providing their details and selecting a unique username and password.
-Users can securely login using their registered email and password.
+Users can securely log in using their registered email and password.
 
 #### Employer Dashboard
 Employers have access to a personalized dashboard where they can manage their job postings and track the progress of applications.
