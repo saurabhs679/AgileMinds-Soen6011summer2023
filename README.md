@@ -79,10 +79,12 @@ Secure socket layer (SSL) encryption ensures that all communication between user
 Regular security audits and vulnerability assessments are conducted to identify and address any potential risks or vulnerabilities.
 
 ## Technologies Used
-The career services platform will be developed using modern web technologies, such as:
-Front-end: HTML, CSS, JavaScript, and a modern web framework like React.
-Back-end: A server-side programming language like Node.js.
-Database: A non-relational database management system like MongoDB.
+The career services platform will be developed using modern web technologies, such as HTML, CSS, JavaScript, and a modern web framework like React.
+React is a popular JavaScript library used for building user interfaces in web development. It offers several key benefits that make it a preferred choice for front-end development:
+1. Component-Based Architecture: Each component encapsulates its own logic and state, making it easier to develop, test, and maintain code.
+2. Reusability and Composability: Components can be reused across different parts of an application or shared between different projects, which helps save development time and effort.
+3. Performance Optimization: By minimizing DOM updates to only what has changed, React reduces the overall computational load and enhances the application's speed and responsiveness.
+4. Community and Ecosystem: React has a vast and active community, which means there are plenty of resources, libraries, and tools available to support development.
   
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
