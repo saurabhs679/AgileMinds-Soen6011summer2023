@@ -11,8 +11,9 @@
    * [Conclusion](#conclusion)
 <!--te-->
 ## GitHub Link:
-GitHub repository link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
-GitHub Wiki link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki
+GitHub repository: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
+GitHub wiki: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki  
+GitHub sprint task board: https://github.com/saurabhs679?tab=projects
 ## Project Title: JobSeekr
 Tagline: Unlock Your Potential, Discover Endless Opportunities
 ## Description of the Project
