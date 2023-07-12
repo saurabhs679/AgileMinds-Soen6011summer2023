@@ -11,22 +11,23 @@
    * [Conclusion](#conclusion)
 <!--te-->
 ## GitHub Link:
-GitHub repository link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git
-Github Wiki link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki
+GitHub repository link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
+GitHub Wiki link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki
 ## Project Title: JobSeekr
 Tagline: Unlock Your Potential, Discover Endless Opportunities
 ## Description of the Project
 This project aims to develop a career services platform named "JobSeekr" that connects students/candidates seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students/candidates to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
 
 ## Team Members and Roles
-|Student ID| Name | Email | GitHub | Role
-|:---------:|:---------:|:---------:|:---------:|:---------:|
-|40226298|Saurabh Sharma|saurabh.sharma@mail.concordia.ca|saurabhs679| Product Owner|
-|40227757|Madhava Sai Kumar Karnati|madhavrockzz007@gmail.com| Madhava5| Quality Manager|
-|40229989|Prashant Banavali | prashant.banavali@mail.concordia.ca| PrashantBanavali | Scrum Master |
-|40230004|Srikar Hasthi|hsrikar1999@gmail.com|SrikarHasthi| Support Manager|
-|40236181|Papry	Barua|paprybarua91@gmail.com|papry04| Design Manager|
-|40236936|Venkata Srikar Vishnu Datta Akela|srikarvishnudatta@gmail.com|srikarvishnudatta| Implementation Manager|
+|Student ID| Name | Email | GitHub UserName | Role | Strengths |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|40226298|Saurabh Sharma|saurabh.sharma@mail.concordia.ca|saurabhs679| Project Manager/ Backend Developer | Javascript, Node.js |
+|40227757|Madhava Sai Kumar Karnati|madhavrockzz007@gmail.com| Madhava5| Quality Manager/ Frontend Developer | React, Javascript |
+|40229989|Prashant Banavali | prashant.banavali@mail.concordia.ca| PrashantBanavali | Release Manager/ Backend Developer | Javascript, GitHub Actions CI/CD |
+|40230004|Srikar Hasthi|hsrikar1999@gmail.com|SrikarHasthi| Scrum Master/ Frontend Developer | React, Javascript |
+|40236181|Papry	Barua|paprybarua91@gmail.com|papry04| Design Manager/ Backend Developer |Javascript, Node.js 
+|40236936|Venkata Srikar Vishnu Datta Akela|srikarvishnudatta@gmail.com|srikarvishnudatta| Implementation Manager/ Frontend Developer | React, Javascript |
+
 
 ## Project Approach and Technology
 The project will follow an agile methodology, which is an iterative and incremental approach that emphasizes flexibility, collaboration, continuous feedback, and adaptive planning. It will help the team promote a flexible and collaborative approach, allowing them to respond quickly to changes and deliver value iteratively.
