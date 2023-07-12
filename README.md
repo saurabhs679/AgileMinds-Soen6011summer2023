@@ -11,8 +11,9 @@
    * [Conclusion](#conclusion)
 <!--te-->
 ## GitHub Link:
-GitHub repository link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
-GitHub Wiki link: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki
+GitHub repository: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
+GitHub wiki: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki  
+GitHub sprint task board: https://github.com/saurabhs679?tab=projects
 ## Project Title: JobSeekr
 Tagline: Unlock Your Potential, Discover Endless Opportunities
 ## Description of the Project
@@ -98,6 +99,8 @@ React is a popular JavaScript library used for building user interfaces in web d
 2. Reusability and Composability: Components can be reused across different parts of an application or shared between different projects, which helps save development time and effort.
 3. Performance Optimization: By minimizing DOM updates to only what has changed, React reduces the overall computational load and enhances the application's speed and responsiveness.
 4. Community and Ecosystem: React has a vast and active community, which means there are plenty of resources, libraries, and tools available to support development.
+
+The Backend, the System will employ file-based storage to manage static data using JavaScript and Node.Js. This static data will be represented as objects and stored within files. The purpose of storing this data in files is to facilitate data presentation and data persistence. The System will read the data from these files to display it to the users, and it will also save any changes or new data by writing the updated objects back to the files. This approach allows for efficient retrieval and storage of static data, ensuring that the System can effectively showcase and maintain the information it contains.
   
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
