@@ -14,7 +14,7 @@
 GitHub repository: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023.git  
 GitHub wiki: https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/wiki  
 GitHub sprint task board: https://github.com/saurabhs679?tab=projects
-## Project Title: JobSeekr
+## Project Title: Career Services Application (JobSeekr)
 Tagline: Unlock Your Potential, Discover Endless Opportunities
 ## Description of the Project
 This project aims to develop a career services platform named "JobSeekr" that connects students/candidates seeking job opportunities with employers looking to hire. The platform will provide a convenient and efficient way for students/candidates to showcase their portfolios and update their profiles, while employers can post job openings and manage applications. This system aims to streamline the job search process for both job seekers and employers, allowing them to find their ideal matches. Its primary goal is to facilitate the job search and recruitment process by providing a centralized location for job postings, resumes, and other relevant information. 
