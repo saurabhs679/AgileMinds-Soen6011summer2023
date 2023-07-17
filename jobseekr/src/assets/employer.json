@@ -1,0 +1,62 @@
+[
+  {
+    "employerId": 30001,
+    "name": "Remold",
+    "jobs": [40001]
+  },
+  {
+    "employerId": 30002,
+    "name": "Zaphire",
+    "jobs": [40002]
+  },
+  {
+    "employerId": 30003,
+    "name": "Atomica",
+    "jobs": [40003]
+  },
+  {
+    "employerId": 30004,
+    "name": "Waab",
+    "jobs": [40004]
+  },
+  {
+    "employerId": 30005,
+    "name": "Netplax",
+    "jobs": [40005]
+  },
+  {
+    "employerId": 30006,
+    "name": "Extremo",
+    "jobs": [40006]
+  },
+  {
+    "employerId": 30007,
+    "name": "Zogak",
+    "jobs": [40007]
+  },
+  {
+    "employerId": 30008,
+    "name": "Medicare Montreal",
+    "jobs": [40008]
+  },
+  {
+    "employerId": 30009,
+    "name": "Concordia University",
+    "jobs": [40009]
+  },
+  {
+    "employerId": 30010,
+    "name": "Freakin",
+    "jobs": []
+  },
+  {
+    "employerId": 30011,
+    "name": "Centice",
+    "jobs": []
+  },
+  {
+    "employerId": 300012,
+    "name": "Newcube",
+    "jobs": []
+  }
+]
