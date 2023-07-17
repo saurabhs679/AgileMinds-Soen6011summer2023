@@ -1,0 +1,110 @@
+[
+  {
+    "jobId": 40001,
+    "employerId": 30001,
+    "title": "Software Developer",
+	"location":"Montréal, QC",
+	"salary":"$66,223–$81,446 a year",
+	"jobType":"Full-time",
+    "description": "Velit nostrud aliqua ea in. Ipsum ex eiusmod irure quis ipsum quis fugiat occaecat. Est qui ea nisi adipisicing elit adipisicing dolore minim.\r\n",
+    "applied": [50001,50002,50004,50011,50013,50015],
+    "accepted": [50002,50011],
+    "rejected": [50001,50004,50013,50015]
+  },
+  {
+    "jobId": 40002,
+    "employerId": 30002,
+    "title": "Java Developer",
+	"location":"Brossard, QC",
+	"salary":"$50,750–$90,000 a year",
+	"jobType":"Full-time",
+    "description": "Ipsum laborum tempor sunt dolor deserunt dolore reprehenderit non in Lorem minim do ut. Incididunt dolor qui ex amet duis est officia. Deserunt eu do aute culpa ea. Est ullamco laboris ea consequat minim.\r\n",
+    "applied": [50004,50008,50009,50010,50012,50016],
+    "accepted": [50004,50010],
+    "rejected": [50008,50009,50012,50016]
+  },
+  {
+    "jobId": 40003,
+    "employerId": 30003,
+    "title": "Full Stack Developer",
+	"location":"Montréal, QC",
+	"salary":"$40,750–$70,000 a year",
+	"jobType":"Full-time",
+    "description": "Ea do incididunt tempor ea veniam ipsum aliqua eu tempor do consectetur fugiat elit. Esse laboris esse adipisicing eiusmod cillum anim ipsum exercitation qui nostrud amet ullamco cupidatat irure. Aute aute labore do cillum deserunt nostrud irure et eiusmod sunt laborum ullamco non.\r\n",
+    "applied": [50002,50003,50008,50009,50010,50012],
+    "accepted": [50010],
+    "rejected": [50002,50003,50008,50009,50012]
+  },
+  {
+    "jobId": 40004,
+    "employerId": 30004,
+    "title": "Senior Java Developer",
+	"location":"Brossard, QC",
+	"salary":"$70,750–$120,000 a year",
+	"jobType":"Remote",
+    "description": "Ut amet cupidatat minim irure irure proident ut officia exercitation. Cillum laborum culpa amet anim deserunt ea. Laboris excepteur aute tempor aliquip irure et qui aute exercitation qui nostrud. Nisi est ea consequat anim amet reprehenderit consectetur. Excepteur proident esse ex reprehenderit labore qui excepteur ipsum.\r\n",
+    "applied": [50004,50008,50009,50010,50012,50016],
+    "accepted": [50008],
+    "rejected": [50004,50009,50010,50012,50016]
+  },
+  {
+    "jobId": 40005,
+    "employerId": 30005,
+    "title": "Data Analyst",
+	"location":"Brossard, QC",
+	"salary":"$50,750–$90,000 a year",
+	"jobType":"Full-time",
+    "description": "Nulla velit velit amet magna adipisicing ullamco. Officia ex nostrud quis non consectetur nostrud dolore. Labore anim enim magna amet quis officia eu labore. Officia est id mollit quis do ipsum. Nulla pariatur tempor ipsum eiusmod reprehenderit aliqua qui esse nulla reprehenderit adipisicing. Lorem deserunt non voluptate consequat proident qui tempor ut occaecat. Cillum aute nostrud veniam laborum cillum ullamco labore elit velit laboris.\r\n",
+    "applied": [50002,50003,50005,50006],
+    "accepted": [50006],
+    "rejected": [50002,50003,50005]
+  },
+  {
+    "jobId": 40006,
+    "employerId": 30006,
+    "title": "Power BI Developer",
+	"location":"Saint-Laurent, QC",
+	"salary":"$25 per hour",
+	"jobType":"Part-time",
+    "description": "Sit mollit mollit labore esse. Qui cillum laboris adipisicing laborum occaecat consequat exercitation nulla proident consectetur id nisi ipsum veniam. Dolore elit irure nisi esse exercitation occaecat aliqua ut aute.\r\n",
+    "applied": [50001,50005,50009,50010,50012,50019],
+    "accepted": [50005,50012],
+    "rejected": [50001,50009,50010,50019]
+  },
+  {
+    "jobId": 40007,
+    "employerId": 30007,
+    "title": "Junior Data Scientist",
+	"location":"Montréal, QC",
+	"salary":"$50,750–$70,000 a year",
+	"jobType":"Full-time",
+    "description": "Nisi incididunt ea dolor sit voluptate laborum eiusmod consectetur. Et aliquip pariatur consequat incididunt veniam officia do. Enim do exercitation ullamco id pariatur. Enim incididunt velit dolore minim quis aliqua laboris labore nisi nisi ex quis est. Excepteur ad anim officia labore ipsum amet. Magna ullamco duis deserunt eiusmod ipsum consequat pariatur veniam in incididunt.\r\n",
+    "applied": [50005,50012,50013,50016],
+    "accepted": [50016],
+    "rejected": [50005,50012,50013]
+  },
+  {
+    "jobId": 40008,
+    "employerId": 30008,
+    "title": "Nursing Assistant",
+	"location":"Longueuil, QC",
+	"salary":"$70,750–$90,000 a year",
+	"jobType":"Full-time",
+    "description": "Mollit do labore consequat nulla non veniam ut ullamco. Labore incididunt nostrud occaecat nostrud Lorem quis anim non eu consectetur incididunt quis. Duis nisi esse reprehenderit id sit excepteur exercitation adipisicing. Lorem ut sint ad eiusmod irure laborum ad. Fugiat qui adipisicing cupidatat ipsum tempor veniam sunt magna velit nisi mollit ea amet. Dolore ipsum ea non ut ut anim ad ad. Ut do dolor pariatur sint et adipisicing adipisicing Lorem esse elit nostrud.\r\n",
+    "applied": [50004,50006,50007,50018,50019],
+    "accepted": [50018],
+    "rejected": [50004,50006,50007,50019]
+  },
+  {
+    "jobId": 40009,
+    "employerId": 30009,
+    "title": "Assistant Professor",
+	"location":"Montréal, QC",
+	"salary":"$90,750–$120,000 a year",
+	"jobType":"Full-time",
+    "description": "Nisi eiusmod cillum amet nostrud nostrud ea irure occaecat ut nulla. Sunt aliqua ea culpa nulla sit excepteur aute et. Anim tempor ad officia ullamco nostrud.\r\n",
+    "applied": [50001,50003,50007,50008,50017,50018,50019],
+    "accepted": [50017],
+    "rejected": [50001,50003,50007,50008,50018,50019]
+  }
+]

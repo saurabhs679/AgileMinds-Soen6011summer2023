@@ -1,0 +1,62 @@
+[
+  {
+    "userid": 10001,
+    "email": "emp1.gmail.com",
+    "password": "SOEN@6011",
+    "type": "employer"
+  },
+  {
+    "userid": 20001,
+    "email": "can1.gmail.com",
+    "password": "SOEN@6011",
+    "type": "candidate"
+  },
+  {
+    "userid": 10002,
+    "email": "emp2.gmail.com",
+    "password": "SOEN@6011",
+    "type": "employer"
+  },
+  {
+    "userid": 10003,
+    "email": "emp3.gmail.com",
+    "password": "SOEN@6011",
+    "type": "employer"
+  },
+  {
+    "userid": 10004,
+    "email": "emp4.gmail.com",
+    "password": "SOEN@6011",
+    "type": "employer"
+  },
+  {
+    "userid": 20002,
+    "email": "can2.gmail.com",
+    "password": "SOEN@6011",
+    "type": "candidate"
+  },
+  {
+    "userid": 20003,
+    "email": "can3.gmail.com",
+    "password": "SOEN@6011",
+    "type": "candidate"
+  },
+  {
+    "userid": 90001,
+    "email": "admin1.gmail.com",
+    "password": "SOEN@6011",
+    "type": "admin"
+  },
+  {
+    "userid": 90002,
+    "email": "admin2.gmail.com",
+    "password": "SOEN@6011",
+    "type": "admin"
+  },
+  {
+    "userid": 90003,
+    "email": "admin3.gmail.com",
+    "password": "SOEN@6011",
+    "type": "admin"
+  }
+]
