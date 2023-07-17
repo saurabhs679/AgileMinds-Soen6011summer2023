@@ -1,12 +1,16 @@
 import React,{ useContext, useState } from "react";
 import {
   Grid,
+  TextField,
+  Button,
   Typography,
   makeStyles,
   Paper,
 } from "@material-ui/core";
 import { Redirect } from "react-router-dom";
 import "../index.css"
+import PasswordInput from "../lib/PasswordInput";
+import EmailInput from "../lib/EmailInput";
 import { SetPopupContext } from "../App";
 import isAuth from "../lib/isAuth";
 import img from './login-img.png';
@@ -99,13 +103,33 @@ return loggedin ? (
         </Grid>
 
         <Grid item>
-        {/* Email input */}
+          <EmailInput
+            label="Email"
+            value={loginDetails.email}
+            onChange={(event) => handleInput("email", event.target.value)}
+            inputErrorHandler={inputErrorHandler}
+            handleInputError={handleInputError}
+            className={classes.inputBox}
+          />
         </Grid>
         <Grid item>
-         {/* Password field */}
+          <PasswordInput
+            label="Password"
+            value={loginDetails.password}
+            onChange={(event) => handleInput("password", event.target.value)}
+            className={classes.inputBox}
+          />
         </Grid>
         <Grid item>
-         {/* Login button */}
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => handleLogin()}
+            className={classes.submitButton}
+            style={{borderRadius:"8px",width:"130px",height:"50px"}}
+          >
+            Login
+          </Button>
         </Grid>
       </Grid>
     </Paper>

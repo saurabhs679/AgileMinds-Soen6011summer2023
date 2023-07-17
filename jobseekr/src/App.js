@@ -2,7 +2,11 @@ import React,{ createContext, useState } from 'react';
 import { BrowserRouter ,Switch, Route } from 'react-router-dom';
 import RegistrationForm from './components/RegistrationForm';
 import LoginForm from './components/LoginForm';
+import Logout from "./components/Logout";
 import { Grid, makeStyles } from "@material-ui/core";
+import Welcome from "./components/Welcome";
+import Navbar from "./components/Navbar";
+import MessagePopup from "./lib/MessagePopup";
 const useStyles = makeStyles(
   (theme) => ({
   body: {
@@ -42,12 +46,12 @@ const App = () => {
       
       <Grid container direction="column">
         <Grid item xs>
-        {/* Navigation component */}
+          <Navbar />
         </Grid>
         <Grid item className={classes.body}>
           <Switch>
             <Route exact path="/">
-         {/* Dashboard component*/}
+              <Welcome />
             </Route>
             <Route exact path="/login">
               <LoginForm />
@@ -56,11 +60,51 @@ const App = () => {
               <RegistrationForm />
             </Route>
              <Route exact path="/logout">
-              {/* Logout component */}
+              <Logout />
             </Route>
+            {/*<Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/applications">
+              <Applications />
+            </Route> */}
+           
+            {/* <Route exact path="/profile">
+              {userType() === "recruiter" ? (
+                <RecruiterProfile />
+              ) : (
+                <Profile />
+              )}
+            </Route>
+            <Route exact path="/addjob">
+              <CreateJobs />
+            </Route>
+            <Route exact path="/myjobs">
+              <MyJobs />
+            </Route>
+            <Route exact path="/job/applications/:jobId">
+              <JobApplications />
+            </Route>
+            <Route exact path="/employees">
+              <AcceptedApplicants />
+            </Route>
+            <Route>
+              <ErrorPage />
+            </Route> */}
           </Switch>
         </Grid>
       </Grid>
+      <MessagePopup
+        open={popup.open}
+        setOpen={(status) =>
+          setPopup({
+            ...popup,
+            open: status,
+          })
+        }
+        severity={popup.severity}
+        message={popup.message}
+      />
     </SetPopupContext.Provider>
       </BrowserRouter>
   );
