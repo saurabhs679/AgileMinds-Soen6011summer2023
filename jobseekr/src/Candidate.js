@@ -86,7 +86,7 @@ const Candidate = () => {
                     <h3>Candidate Listing</h3>
                 </div>
                 <div className="card-body">
-                    <button onClick={handleadd} className="btn btn-success">Add (+)</button>
+                    <button onClick={handleadd} className="btn btn-success">Add (+)</button> 
                     <br></br>
                     <table className="table table-bordered">
                         <thead className="bg-dark text-white">

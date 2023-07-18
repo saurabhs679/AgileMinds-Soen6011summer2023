@@ -7,6 +7,8 @@ import Register from './Register';
 import { ToastContainer } from 'react-toastify';
 import Appheader from './Appheader';
 import Candidate from './Candidate';
+import Addjobs from './Addjobs';
+import Jobs from './Jobview'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/candidate' element={<Candidate/>}></Route>
+        <Route path='/addjobs' element={<Addjobs/>}></Route>
+        <Route path='/jobview' element={<Jobs/>}></Route>
       </Routes>
       
       </BrowserRouter>

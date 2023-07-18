@@ -26,10 +26,15 @@ const Appheader = () => {
                 <div className="header">
 
                     <Link to={'/'}>Home</Link>
-                    <span style={{ marginLeft: '5%' }}></span>
+                    <span style={{ marginLeft: '2.5%' }}></span>
                     <Link to={'/candidate'}>Candidate</Link>
-                    <span style={{ marginLeft: '70%' }}>Welcome <b>{displayusername}</b></span>
+                    <span style={{ marginLeft: '2.5%' }}></span>
+                    <Link to={'/addjobs'}>Add Jobs</Link>
+                    <span style={{ marginLeft: '2.5%' }}></span>
+                    <Link to={'/jobview'}>Posted Jobs</Link>
+                    <span style={{ marginLeft: '55%' }}>Welcome <b>{displayusername}</b></span>
                     <Link style={{ float: 'right' }} to={'/login'}>Logout</Link>
+                    
                 </div>
             }
         </div>
