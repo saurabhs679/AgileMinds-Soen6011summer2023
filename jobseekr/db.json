@@ -10,6 +10,16 @@
       "address": "",
       "role": "admin",
       "gender": "Male"
+    },
+    {
+      "id": "madhava",
+      "name": "madhava",
+      "password": "madhava",
+      "email": "madhava@gmail.com",
+      "phone": "9898989898",
+      "country": "canada",
+      "address": "2125",
+      "gender": "male"
     }
   ],
   "roleaccess": [
@@ -18,7 +28,20 @@
       "menu": "Candidates",
       "haveadd": true,
       "haveedit": true,
-      "havedelete": true
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
+    },
+    {
+      "role": "admin",
+      "menu": "jobs",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
     },
     {
       "role": "user",
@@ -53,6 +76,18 @@
       "code": 5,
       "name": "boult",
       "email": "bould@in.com"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "dev",
+      "skills": "a",
+      "jobtype": "fulltime",
+      "salary": "100",
+      "applicationdeadline": "2023-07-18T00:17",
+      "applicants": "1",
+      "positionsavailable": "1",
+      "id": 1
     }
   ]
 }
