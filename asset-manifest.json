@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AgileMinds-Soen6011summer2023/static/css/main.ec05529c.css",
+    "main.js": "/AgileMinds-Soen6011summer2023/static/js/main.0d76d705.js",
+    "static/media/login-img.png": "/AgileMinds-Soen6011summer2023/static/media/login-img.5dcd4b758cbc25ad3f4c.png",
+    "static/media/job-search.png": "/AgileMinds-Soen6011summer2023/static/media/job-search.17f4ba088afe93b2c091.png",
+    "index.html": "/AgileMinds-Soen6011summer2023/index.html",
+    "main.ec05529c.css.map": "/AgileMinds-Soen6011summer2023/static/css/main.ec05529c.css.map",
+    "main.0d76d705.js.map": "/AgileMinds-Soen6011summer2023/static/js/main.0d76d705.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec05529c.css",
+    "static/js/main.0d76d705.js"
+  ]
+}
