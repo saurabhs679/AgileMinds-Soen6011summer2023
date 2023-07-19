@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import CandidateList from "./CandidateList";
 
-const Candidate = () => {
+const ViewAppliedCandidates = () => {
     const [candlist, candupdate] = useState([]);
     const [haveedit, editchange] = useState(false);
     const [haveview, viewchange] = useState(false);
@@ -14,7 +14,7 @@ const Candidate = () => {
 
 
     useEffect(() => {
-        GetUserAccess();
+       // GetUserAccess();
         loadcandidate();
        
     }, []);
@@ -33,11 +33,11 @@ const Candidate = () => {
     const GetUserAccess = () => {
         const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
         fetch("http://localhost:8000/roleaccess?role=" + userrole + "&menu=Candidates").then(res => {
-            if (!res.ok) {
-                navigate('/');
-            toast.warning('You are not authorized to access');
-                return false;
-            }
+            // if (!res.ok) {
+            //     navigate('/');
+            // toast.warning('You are not authorized to access');
+            //     return false;
+            // }
             return res.json();
         }).then(res => {
             console.log(res);
@@ -61,31 +61,47 @@ const Candidate = () => {
             toast.warning('You are not having access for add');
         }
     }
-    // const handleedit = () => {
-    //     if(haveedit){
-    //     toast.success('edited')
-    //     }
-    //     else{
-    //         toast.warning('You are not having access for Edit');
-    //     }
-    // }
+    const handleedit = () => {
+        if(haveedit){
+        toast.success('edited')
+        }
+        else{
+            toast.warning('You are not having access for Edit');
+        }
+    }
 
-    // const handleremove = () => {
-    //     if(haveremove){
-    //     toast.success('removed')
-    //     }else{
-    //         toast.warning('You are not having access for remove');
-    //     }
-    // }
+    const handleremove = () => {
+        if(haveremove){
+        toast.success('removed')
+        }else{
+            toast.warning('You are not having access for remove');
+        }
+    }
 
+
+    // const Candidate = ({ candidate }) => {
+    //     return (
+    //       <div className="card">
+            
+    //         <h5>{candidate.Name}</h5>
+    //         <p><b>NAME</b>: {candidate.Name}</p>
+    //         <p><b>EMAIL</b>: {candidate.email}</p>
+    //         <p><b>AGE</b>: {candidate.age}</p>
+    //         <p><b>GENDER</b>: {candidate.gender}</p>
+    //         <p><b>CURRENT POSITION</b>: {candidate.currentPosition}</p>
+    //         <p><b>SKILLS</b>: {candidate.skills}</p>
+    //         <button onClick={handleedit} className="btn btn-primary">Edit</button> 
+    //         <button onClick={handleremove} className="btn btn-danger">Remove</button>
+    //       </div>
+    //     );
+    //   };
       return (
       <div className="App">
       <h1>CANDIDATE LISTING</h1>
       <div className="card-container">
           
           {candlist.map(candidate => (
-          <CandidateList key={candidate.id} candidate={candidate} haveedit={haveedit} haveremove={haveremove} />
-
+          <CandidateList key={candidate.id} candidate={candidate} haveedit={haveedit} haveremove={haveremove}/>
         ))}
           
           
@@ -137,4 +153,4 @@ const Candidate = () => {
     */
 }
 
-export default Candidate;
+export default ViewAppliedCandidates;

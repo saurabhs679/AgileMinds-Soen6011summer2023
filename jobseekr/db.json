@@ -84,9 +84,7 @@
       "currentPosition": "Python Developer",
       "skills": "Python",
       "jobsApplied": [
-        40001,
-        40009,
-        40006
+        1,2
       ]
     },
     {
@@ -99,10 +97,7 @@
       "currentPosition": "Devops Engineer",
       "skills": "AWS, Github, Docker, Splunk",
       "jobsApplied": [
-        40003,
-        40005,
-        40006,
-        40001
+        1
       ]
     },
     {
@@ -115,10 +110,7 @@
       "currentPosition": "DBA Admin",
       "skills": "SQL , Postgresql",
       "jobsApplied": [
-        40003,
-        40005,
-        40008,
-        40009
+        2,3
       ]
     },
     {
@@ -131,10 +123,7 @@
       "currentPosition": "Java Developer",
       "skills": "Java, SpringBoot, MVC",
       "jobsApplied": [
-        40001,
-        40002,
-        40004,
-        40008
+        1,2,3
       ]
     },
     {
@@ -147,9 +136,7 @@
       "currentPosition": "Business Analyst",
       "skills": "Excel, PowerBI",
       "jobsApplied": [
-        40006,
-        40007,
-        40005
+        1,3
       ]
     }
   ],

@@ -9,6 +9,7 @@ import Appheader from './Appheader';
 import Candidate from './Candidate';
 import Addjobs from './Addjobs';
 import Jobs from './Jobview'
+import ViewAppliedCandidates from './ViewAppliedCandidates';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/candidate' element={<Candidate/>}></Route>
         <Route path='/addjobs' element={<Addjobs/>}></Route>
         <Route path='/jobview' element={<Jobs/>}></Route>
+        <Route path='/viewappliedcandidates' element={<ViewAppliedCandidates/>}></Route>
       </Routes>
       
       </BrowserRouter>
