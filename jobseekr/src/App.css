@@ -111,4 +111,6 @@ h1 {
   font-size: 14px;
 }
 
-
+.form-control-dropdown{
+  appearance: auto !important;
+}

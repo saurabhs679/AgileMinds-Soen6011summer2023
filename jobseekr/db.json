@@ -19,7 +19,19 @@
       "phone": "9898989898",
       "country": "canada",
       "address": "2125",
-      "gender": "male"
+      "gender": "male",
+      "role": "employer"
+    },
+    {
+      "id": "srikar",
+      "name": "srikarhasthi",
+      "password": "srikar",
+      "email": "kksdjfh@gmail.com",
+      "phone": "5145874568",
+      "country": "canada",
+      "address": "",
+      "gender": "male",
+      "role": "employer"
     }
   ],
   "roleaccess": [
@@ -49,6 +61,16 @@
       "haveadd": false,
       "haveedit": false,
       "havedelete": false
+    },
+    {
+      "role": "employer",
+      "menu": "jobs",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
     }
   ],
   "Candidates": [
@@ -61,7 +83,11 @@
       "resume": "Anim ad ad deserunt dolor consectetur quis excepteur aute nostrud. Nisi veniam enim commodo laboris aliquip aliqua pariatur enim laborum consequat exercitation. Sint incididunt aliqua proident nisi eu duis qui nostrud mollit laborum duis laboris proident est.\r\n",
       "currentPosition": "Python Developer",
       "skills": "Python",
-      "jobsApplied": [40001,40009,40006]
+      "jobsApplied": [
+        40001,
+        40009,
+        40006
+      ]
     },
     {
       "candidateId": 2,
@@ -72,7 +98,12 @@
       "resume": "Laboris sint qui ad sint ea do aliquip reprehenderit culpa quis consectetur est. Commodo in ut ex exercitation velit mollit. Sit mollit ad elit occaecat anim consequat consequat eu ipsum aute voluptate aute nisi deserunt. Proident veniam ad et tempor. Proident pariatur ipsum proident veniam magna exercitation cupidatat excepteur adipisicing reprehenderit dolore eu veniam fugiat. Sunt elit eu voluptate consequat culpa laboris enim ex ea.\r\n",
       "currentPosition": "Devops Engineer",
       "skills": "AWS, Github, Docker, Splunk",
-      "jobsApplied": [40003,40005,40006,40001]
+      "jobsApplied": [
+        40003,
+        40005,
+        40006,
+        40001
+      ]
     },
     {
       "candidateId": 3,
@@ -83,7 +114,12 @@
       "resume": "Tempor est quis mollit exercitation ipsum esse laborum et esse reprehenderit velit proident labore proident. Veniam eiusmod eiusmod dolor reprehenderit proident ut cupidatat dolore sunt sit anim. Magna nostrud deserunt adipisicing duis exercitation officia. Aute sint minim anim aute elit nulla consequat ex sit quis irure sit occaecat. Exercitation minim non sunt velit proident occaecat cupidatat consectetur voluptate cillum magna exercitation. Ex laboris aliquip in culpa enim et reprehenderit esse veniam aliquip ex aliquip sunt.\r\n",
       "currentPosition": "DBA Admin",
       "skills": "SQL , Postgresql",
-      "jobsApplied": [40003,40005,40008,40009]
+      "jobsApplied": [
+        40003,
+        40005,
+        40008,
+        40009
+      ]
     },
     {
       "candidateId": 4,
@@ -94,7 +130,12 @@
       "resume": "Eu ex nostrud fugiat Lorem deserunt ut aliquip fugiat aliqua excepteur est duis ullamco. Laborum sit ipsum nulla nisi. Laborum veniam Lorem Lorem magna. Ad ea sit nostrud ad consequat ut fugiat non irure.\r\n",
       "currentPosition": "Java Developer",
       "skills": "Java, SpringBoot, MVC",
-      "jobsApplied": [40001,40002,40004,40008]
+      "jobsApplied": [
+        40001,
+        40002,
+        40004,
+        40008
+      ]
     },
     {
       "candidateId": 5,
@@ -105,10 +146,13 @@
       "resume": "Do mollit laborum excepteur in non proident laboris. Veniam cillum officia et enim nisi in nisi ipsum et proident eu. Deserunt elit ex tempor cillum nulla in culpa consequat. Ullamco sit fugiat elit pariatur proident do. Ad consectetur eu non laboris nostrud consectetur consequat consectetur. Irure dolore quis aute cupidatat et ea est sit eu occaecat eiusmod magna. Duis aliqua proident aliquip amet aliquip duis proident ullamco commodo exercitation.\r\n",
       "currentPosition": "Business Analyst",
       "skills": "Excel, PowerBI",
-      "jobsApplied": [40006,40007,40005]
+      "jobsApplied": [
+        40006,
+        40007,
+        40005
+      ]
     }
   ],
-
   "jobs": [
     {
       "title": "Analyst",
@@ -118,7 +162,8 @@
       "applicationdeadline": "2023-07-18T00:17",
       "applicants": "10",
       "positionsavailable": "1",
-      "id": 1
+      "id": 1,
+      "employer": "srikar"
     },
     {
       "title": "Devops Engineer",

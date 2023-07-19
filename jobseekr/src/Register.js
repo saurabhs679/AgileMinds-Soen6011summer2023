@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 const Register = () => {
 
     const [id, idchange] = useState("");
+    const [role, changeRoleType] = useState("");
     const [name, namechange] = useState("");
     const [password, passwordchange] = useState("");
     const [email, emailchange] = useState("");
@@ -18,6 +19,10 @@ const Register = () => {
     const IsValidate = () => {
         let isproceed = true;
         let errormessage = 'Please enter the value in ';
+        if (role === null || role === '') {
+            isproceed = false;
+            errormessage += ' Role';
+        }
         if (id === null || id === '') {
             isproceed = false;
             errormessage += ' Username';
@@ -51,7 +56,7 @@ const Register = () => {
 
     const handlesubmit = (e) => {
             e.preventDefault();
-            let regobj = { id, name, password, email, phone, country, address, gender };
+            let regobj = { id, name, password, email, phone, country, address, gender, role };
             if (IsValidate()) {
             //console.log(regobj);
             fetch("http://localhost:8000/user", {
@@ -77,6 +82,16 @@ const Register = () => {
                         <div className="card-body">
 
                             <div className="row">
+                            <div className="col-lg-12">
+                                    <div className="form-group">
+                                        <label for="role">Role<span className="errmsg">*</span></label>
+                                            <select name="role" id="role" onChange={e => changeRoleType(e.target.value)} className="form-control-dropdown form-control">
+                                            <option value="">Select..</option>
+                                            <option value="employer">Employer</option>
+                                            <option value="Candidate">Candidate</option>
+                                            </select>
+                                    </div>
+                                </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <label>User Name <span className="errmsg">*</span></label>
@@ -110,7 +125,7 @@ const Register = () => {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <label>Country <span className="errmsg">*</span></label>
-                                        <select value={country} onChange={e => countrychange(e.target.value)} className="form-control">
+                                        <select value={country} onChange={e => countrychange(e.target.value)} className="form-control form-control-dropdown">
                                             <option value="india">India</option>
                                             <option value="usa">USA</option>
                                             <option value="canada">Canada</option>

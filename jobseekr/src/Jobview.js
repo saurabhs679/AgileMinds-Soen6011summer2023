@@ -25,6 +25,11 @@ const Jobs = () => {
             }
             return res.json();
         }).then(res => {
+            const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+            res = res.filter((e)=>{
+                return e.employer === username;
+            })
+            console.log("sdfsdf",res);
             jobupdate(res)
         });
     }

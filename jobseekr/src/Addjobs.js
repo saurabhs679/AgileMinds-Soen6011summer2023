@@ -16,35 +16,32 @@ const Addjobs = () => {
 
     const IsValidate = () => {
         let isproceed = true;
-        /* let errormessage = 'Please enter the value in ';
-        if (id === null || id === '') {
+        let errormessage = 'Please enter the value in ';
+        if (title === null || title === '') {
             isproceed = false;
-            errormessage += ' Username';
+            errormessage += ' JobTitle';
         }
-        if (name === null || name === '') {
+        if (skills === null || skills === '') {
             isproceed = false;
-            errormessage += ' Fullname';
+            errormessage += ' Skills';
         }
-        if (password === null || password === '') {
+        if (salary === null || salary === '') {
             isproceed = false;
-            errormessage += ' Password';
+            errormessage += ' Salary';
         }
-        if (email === null || email === '') {
-            isproceed = false;
-            errormessage += ' Email';
-        }
-        */
         if(!isproceed){
-            toast.warning("error")
+            toast.warning(errormessage);
         }
         return isproceed;
     }
 
     //const deadline = new Date(job.deadline).toLocaleDateString();
     const handlesubmit = (e) => {
+   
             e.preventDefault();
-            let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable};
-            if (IsValidate) {
+            const employer = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+            let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable, employer};
+            if (IsValidate()) {
             console.log(regobj);
             fetch("http://localhost:8000/jobs", {
                 method: "POST",
