@@ -81,12 +81,14 @@ const Jobs = () => {
     const Job = ({ jobs }) => {
         return (
           <div className="card">
-            <h2>{jobs.title}</h2>
-            <p>ID: {jobs.id}</p>
-            <p>TITLE: {jobs.title}</p>
-            <p>SKILLS: {jobs.skills}</p>
-            <p>JOBTYPE: {jobs.jobtype}</p>
-            <p>SALARY Position: {jobs.salary}</p>
+            <h5>{jobs.title}</h5>
+            <p><b>ID</b>: {jobs.id}</p>
+            <p><b>TITLE</b>: {jobs.title}</p>
+            <p><b>SKILLS</b>: {jobs.skills}</p>
+            <p><b>JOBTYPE</b>: {jobs.jobtype}</p>
+            <p><b>SALARY Position</b>: {jobs.salary}</p>
+            <button onClick={handleedit} className="btn btn-primary">Edit</button> 
+            <button onClick={handleremove} className="btn btn-danger">Remove</button>
           </div>
         );
       };

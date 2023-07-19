@@ -64,7 +64,7 @@ const Addjobs = () => {
                 <form className="container" onSubmit={handlesubmit}>
                     <div className="card">
                         <div className="card-header">
-                            <h1>Posted Jobs</h1>
+                            <h3>ADD JOBS</h3>
                         </div>
                         <div className="card-body">
 

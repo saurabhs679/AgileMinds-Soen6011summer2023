@@ -89,7 +89,7 @@ const Candidate = () => {
             <p><b>GENDER</b>: {candidate.gender}</p>
             <p><b>CURRENT POSITION</b>: {candidate.currentPosition}</p>
             <p><b>SKILLS</b>: {candidate.skills}</p>
-            <button style={{ padding: "10px 50px", marginTop: "10px",borderRadius:"8px",height:"50px", justifyContent:"flex-end"}} onClick={handleedit}>Edit</button> 
+            <button onClick={handleedit} className="btn btn-primary">Edit</button> 
             <button onClick={handleremove} className="btn btn-danger">Remove</button>
           </div>
         );

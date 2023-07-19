@@ -27,7 +27,7 @@ const Home = () => {
         <div>
             
             <h1 className="text-center">JobSeekr</h1>
-            {/* <table className="table table-bordered">
+            {/*<table className="table table-bordered">
                 <thead>
                     <tr>
                         <td>Code</td>
@@ -50,7 +50,8 @@ const Home = () => {
                     }
                 </tbody>
 
-            </table> */}
+            </table> }
+                */}
         </div>
     );
 }
