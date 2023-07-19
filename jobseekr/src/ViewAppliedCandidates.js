@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import CandidateList from "./CandidateList";
 
 const ViewAppliedCandidates = () => {
+     let { id } = useParams();
     const [candlist, candupdate] = useState([]);
     const [haveedit, editchange] = useState(false);
     const [haveview, viewchange] = useState(false);
@@ -16,7 +17,6 @@ const ViewAppliedCandidates = () => {
     useEffect(() => {
        // GetUserAccess();
         loadcandidate();
-       
     }, []);
 
     const loadcandidate = () => {
@@ -26,6 +26,11 @@ const ViewAppliedCandidates = () => {
             }
             return res.json();
         }).then(res => {
+            id = parseInt(id);
+            res = res.filter((data)=>{
+                return data.jobsApplied.includes(id);
+            })
+            console.log("aaa",res,id);
             candupdate(res)
         });
     }

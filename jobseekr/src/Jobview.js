@@ -82,8 +82,8 @@ const Jobs = () => {
         }
     }
 
-    const handleViewCandidates = () => {
-        navigate('/viewappliedcandidates');
+    const handleViewCandidates = (id) => {
+        navigate(`/viewappliedcandidates/${id}`);
     }
 
     const Job = ({ jobs }) => {
@@ -95,7 +95,7 @@ const Jobs = () => {
             <p><b>SKILLS</b>: {jobs.skills}</p>
             <p><b>JOBTYPE</b>: {jobs.jobtype}</p>
             <p><b>SALARY Position</b>: {jobs.salary}</p>
-            <button onClick={handleViewCandidates} className="btn btn-primary">View Candidates</button> 
+            <button onClick={(e)=>{handleViewCandidates(jobs.id)}} className="btn btn-primary">View Candidates</button> 
             <button onClick={handleedit} className="btn btn-primary">Edit</button> 
             <button onClick={handleremove} className="btn btn-danger">Remove</button>
           </div>

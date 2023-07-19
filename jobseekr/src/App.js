@@ -12,6 +12,7 @@ import Jobs from './Jobview'
 import ViewAppliedCandidates from './ViewAppliedCandidates';
 
 function App() {
+
   return (
     <div className="App">
       <ToastContainer theme='colored' position='top-center'></ToastContainer>
@@ -24,7 +25,7 @@ function App() {
         <Route path='/candidate' element={<Candidate/>}></Route>
         <Route path='/addjobs' element={<Addjobs/>}></Route>
         <Route path='/jobview' element={<Jobs/>}></Route>
-        <Route path='/viewappliedcandidates' element={<ViewAppliedCandidates/>}></Route>
+        <Route path='/viewappliedcandidates/:id' element={<ViewAppliedCandidates/>}></Route>
       </Routes>
       
       </BrowserRouter>
