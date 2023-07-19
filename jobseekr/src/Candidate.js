@@ -78,6 +78,41 @@ const Candidate = () => {
     }
 
 
+    const Candidate = ({ candidate }) => {
+        return (
+          <div className="card">
+            
+            <h5>{candidate.Name}</h5>
+            <p><b>NAME</b>: {candidate.Name}</p>
+            <p><b>EMAIL</b>: {candidate.email}</p>
+            <p><b>AGE</b>: {candidate.age}</p>
+            <p><b>GENDER</b>: {candidate.gender}</p>
+            <p><b>CURRENT POSITION</b>: {candidate.currentPosition}</p>
+            <p><b>SKILLS</b>: {candidate.skills}</p>
+            <button style={{ padding: "10px 50px", marginTop: "10px",borderRadius:"8px",height:"50px", justifyContent:"flex-end"}} onClick={handleedit}>Edit</button> 
+            <button onClick={handleremove} className="btn btn-danger">Remove</button>
+          </div>
+        );
+      };
+      return (
+      <div className="App">
+      <h1>CANDIDATE LISTING</h1>
+      <div className="card-container">
+          
+          {candlist.map(candidate => (
+          <Candidate key={candidate.id} candidate={candidate} />
+          
+          
+          
+        ))}
+          
+          
+        
+      </div>
+    </div>
+  );
+
+    /*
     return (
         <div className="container">
 
@@ -86,8 +121,7 @@ const Candidate = () => {
                     <h3>Candidate Listing</h3>
                 </div>
                 <div className="card-body">
-                    <button onClick={handleadd} className="btn btn-success">Add (+)</button> 
-                    <br></br>
+                    
                     <table className="table table-bordered">
                         <thead className="bg-dark text-white">
                             <tr>
@@ -118,6 +152,7 @@ const Candidate = () => {
             </div>
         </div>
     );
+    */
 }
 
 export default Candidate;

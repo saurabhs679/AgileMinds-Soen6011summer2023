@@ -78,7 +78,32 @@ const Jobs = () => {
         }
     }
 
+    const Job = ({ jobs }) => {
+        return (
+          <div className="card">
+            <h2>{jobs.title}</h2>
+            <p>ID: {jobs.id}</p>
+            <p>TITLE: {jobs.title}</p>
+            <p>SKILLS: {jobs.skills}</p>
+            <p>JOBTYPE: {jobs.jobtype}</p>
+            <p>SALARY Position: {jobs.salary}</p>
+          </div>
+        );
+      };
+      return (
+      <div className="App">
+      <h1>JOB LISTING</h1>
+      <div className="card-container">
+        {joblist.map(jobs => (
+          <Job key={jobs.id} jobs={jobs} />
+        ))}
+      </div>
+    </div>
+  );
+    /*
     return (
+        
+        
         <div className="container">
 
             <div className="card">
@@ -120,7 +145,31 @@ const Jobs = () => {
                 </div>
             </div>
         </div>
+        
+       
+        joblist.map(item => (
+        
+       <div className="card-container">
+         <div className="card">
+         <p>ID: {item.id}</p>
+         <p>TITLE: {item.title}</p>
+         <p>SKILLS: {item.skills}</p>
+         <p>JOBTYPE: {item.jobtype}</p>
+         <p>SALARY: {item.salary}</p>
+         </div>
+     </div>
+        ))
+        /*<div className="App">
+            <h1>Candidate Information</h1>
+            <div className="card-container">
+                {candidatesData.map(candidate => (
+                <CandidateCard key={candidate.candidateId} candidate={candidate} />
+                ))}
+            </div>
+        </div>
+          
     );
+    */
 }
 
 export default Jobs;
