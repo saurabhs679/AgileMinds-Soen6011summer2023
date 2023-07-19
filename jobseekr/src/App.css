@@ -1,6 +1,10 @@
 .App {
   text-align: left;
 }
+body {
+  background-color: #f3f2ef !important;
+  height: 100vh;
+}
 
 .App-logo {
   height: 40vmin;
@@ -34,12 +38,7 @@
 .errmsg{
   color: red;
 }
-.header{
-  width: 100%;
-  background-color: blue;
-  color: #fff;
-  padding: 1%;
-}
+
 a{
   text-decoration: none !important;
   color: white !important;
@@ -52,7 +51,7 @@ app-check{
 }
 .header{
   width: 100%;
-  background-color: blue;
+  background-color: #0072b1;
   color: #fff;
   padding: 1%;
 }
