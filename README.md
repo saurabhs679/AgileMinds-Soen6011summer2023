@@ -102,9 +102,45 @@ React is a popular JavaScript library used for building user interfaces in web d
 
 The Backend, the System will employ file-based storage to manage static data using JavaScript and Node.Js. This static data will be represented as objects and stored within files. The purpose of storing this data in files is to facilitate data presentation and data persistence. The System will read the data from these files to display it to the users, and it will also save any changes or new data by writing the updated objects back to the files. This approach allows for efficient retrieval and storage of static data, ensuring that the System can effectively showcase and maintain the information it contains.
 
-## Upcoming Sprint: Sprint 2  
+## Upcoming Sprint: Sprint 3
 A Sprint plan is available under  
-- [Sprint 2 - Plan](https://github.com/users/saurabhs679/projects/5/views/1)
+- [Sprint 3- Plan](https://github.com/users/saurabhs679/projects/3)
+
+## Completed Sprint: Sprint 2  
+A Sprint plan is available under  
+- [Sprint 2 - Plan](https://github.com/users/saurabhs679/projects/5)
+
+## Snapshots of Features for Sprint 2:
+## Home Page
+
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/2880a6c0-ebd4-4d1b-a03d-c04494e9f4f7)
+
+
+### Core Feature: Employer 
+### Add Jobs
+<img width="759" alt="image (1)" src="https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/92d0eba7-ca21-428a-9a67-dbabbc9a9856">
+
+### Candidate Listing
+<img width="1498" alt="image" src="https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/b622a221-acbe-4ddf-bd92-74b3d03d1049">
+
+## Completed Sprint: Sprint 1 
+A Sprint plan is available under  
+- [Sprint 1 - Plan](https://github.com/users/saurabhs679/projects/5/views/1)
+
+## How to run the project
+
+### Command to run DB
+ npx json-server --watch db.json --port 8000
+ 
+### Command to run frontend
+npm install
+npm start
+
+### Summary of features developed for Sprint 2:
+We implemented a login and register feature, created a JSON file which acts like a DB, 
+employer dashboard where an employer can add jobs and remove jobs also see a list of employees who applied for that job and tracking functionality
+to add tracking features for posted jobs and applied candidates.
+
 
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
