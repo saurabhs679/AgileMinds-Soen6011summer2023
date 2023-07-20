@@ -1,112 +1,37 @@
-import React,{ createContext, useState } from 'react';
-import { BrowserRouter ,Switch, Route } from 'react-router-dom';
-import RegistrationForm from './components/RegistrationForm';
-import LoginForm from './components/LoginForm';
-import Logout from "./components/Logout";
-import { Grid, makeStyles } from "@material-ui/core";
-import Welcome from "./components/Welcome";
-import Navbar from "./components/Navbar";
-import MessagePopup from "./lib/MessagePopup";
-const useStyles = makeStyles(
-  (theme) => ({
-  body: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "98vh",
-    paddingTop: "64px",
-    boxSizing: "border-box",
-    width: "100%",
-  },
-  components: {
-    MuiAppBar: {
-      styleOverrides: {
-        colorPrimary: {
-          backgroundColor: "red"
-        }
-      }
-    }
-  }
-}));
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Login from './Login';
+import Register from './Register';
+import { ToastContainer } from 'react-toastify';
+import Appheader from './Appheader';
+import Candidate from './Candidate';
+import Addjobs from './Addjobs';
+import Jobs from './Jobview'
+import EditJobs from './EditJobs'
+import ViewAppliedCandidates from './ViewAppliedCandidates';
 
-export const SetPopupContext = createContext();
-const TITLE ="JobSeekr"
-const App = () => {
-  const classes = useStyles();
-  const [popup, setPopup] = useState({
-    open: false,
-    severity: "",
-    message: "",
-  });
+function App() {
 
   return (
-    <BrowserRouter>
-      <SetPopupContext.Provider value={setPopup}>
+    <div className="App">
+      <ToastContainer theme='colored' position='top-center'></ToastContainer>
+      <BrowserRouter>
+      <Appheader></Appheader>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+        <Route path='/candidate' element={<Candidate/>}></Route>
+        <Route path='/addjobs' element={<Addjobs/>}></Route>
+        <Route path='/jobview' element={<Jobs/>}></Route>
+        <Route path='/editjob' element={<EditJobs/>}></Route>
+        <Route path='/viewappliedcandidates/:id' element={<ViewAppliedCandidates/>}></Route>
+      </Routes>
       
-      <Grid container direction="column">
-        <Grid item xs>
-          <Navbar />
-        </Grid>
-        <Grid item className={classes.body}>
-          <Switch>
-            <Route exact path="/">
-              <Welcome />
-            </Route>
-            <Route exact path="/login">
-              <LoginForm />
-            </Route>
-            <Route exact path="/signup">
-              <RegistrationForm />
-            </Route>
-             <Route exact path="/logout">
-              <Logout />
-            </Route>
-            {/*<Route exact path="/home">
-              <Home />
-            </Route>
-            <Route exact path="/applications">
-              <Applications />
-            </Route> */}
-           
-            {/* <Route exact path="/profile">
-              {userType() === "recruiter" ? (
-                <RecruiterProfile />
-              ) : (
-                <Profile />
-              )}
-            </Route>
-            <Route exact path="/addjob">
-              <CreateJobs />
-            </Route>
-            <Route exact path="/myjobs">
-              <MyJobs />
-            </Route>
-            <Route exact path="/job/applications/:jobId">
-              <JobApplications />
-            </Route>
-            <Route exact path="/employees">
-              <AcceptedApplicants />
-            </Route>
-            <Route>
-              <ErrorPage />
-            </Route> */}
-          </Switch>
-        </Grid>
-      </Grid>
-      <MessagePopup
-        open={popup.open}
-        setOpen={(status) =>
-          setPopup({
-            ...popup,
-            open: status,
-          })
-        }
-        severity={popup.severity}
-        message={popup.message}
-      />
-    </SetPopupContext.Provider>
       </BrowserRouter>
+      
+    </div>
   );
 };
 

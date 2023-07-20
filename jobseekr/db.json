@@ -1,0 +1,183 @@
+{
+  "user": [
+    {
+      "id": "adminuser",
+      "name": "Madhava",
+      "password": "admin",
+      "email": "madhava@gmail.com",
+      "phone": "8989898989",
+      "country": "Canada",
+      "address": "",
+      "role": "admin",
+      "gender": "Male"
+    },
+    {
+      "id": "madhava",
+      "name": "madhava",
+      "password": "madhava",
+      "email": "madhava@gmail.com",
+      "phone": "9898989898",
+      "country": "canada",
+      "address": "2125",
+      "gender": "male",
+      "role": "employer"
+    },
+    {
+      "id": "srikar",
+      "name": "srikarhasthi",
+      "password": "srikar",
+      "email": "kksdjfh@gmail.com",
+      "phone": "5145874568",
+      "country": "canada",
+      "address": "",
+      "gender": "male",
+      "role": "employer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "Candidates",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
+    },
+    {
+      "role": "admin",
+      "menu": "jobs",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
+    },
+    {
+      "role": "user",
+      "menu": "Candidates",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    },
+    {
+      "role": "employer",
+      "menu": "jobs",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": true,
+      "jobadd": true,
+      "jobremove": true
+    }
+  ],
+  "Candidates": [
+    {
+      "candidateId": 1,
+      "Name": "Terry Ortega",
+      "email": "terryortega@newcube.com",
+      "age": 27,
+      "gender": "female",
+      "resume": "Anim ad ad deserunt dolor consectetur quis excepteur aute nostrud. Nisi veniam enim commodo laboris aliquip aliqua pariatur enim laborum consequat exercitation. Sint incididunt aliqua proident nisi eu duis qui nostrud mollit laborum duis laboris proident est.\r\n",
+      "currentPosition": "Python Developer",
+      "skills": "Python",
+      "jobsApplied": [
+        1,
+        2
+      ]
+    },
+    {
+      "candidateId": 2,
+      "Name": "Maude Holcomb",
+      "email": "maudeholcomb@newcube.com",
+      "age": 50,
+      "gender": "female",
+      "resume": "Laboris sint qui ad sint ea do aliquip reprehenderit culpa quis consectetur est. Commodo in ut ex exercitation velit mollit. Sit mollit ad elit occaecat anim consequat consequat eu ipsum aute voluptate aute nisi deserunt. Proident veniam ad et tempor. Proident pariatur ipsum proident veniam magna exercitation cupidatat excepteur adipisicing reprehenderit dolore eu veniam fugiat. Sunt elit eu voluptate consequat culpa laboris enim ex ea.\r\n",
+      "currentPosition": "Devops Engineer",
+      "skills": "AWS, Github, Docker, Splunk",
+      "jobsApplied": [
+        1
+      ]
+    },
+    {
+      "candidateId": 3,
+      "Name": "Rosanna Tyson",
+      "email": "rosannatyson@newcube.com",
+      "age": 32,
+      "gender": "female",
+      "resume": "Tempor est quis mollit exercitation ipsum esse laborum et esse reprehenderit velit proident labore proident. Veniam eiusmod eiusmod dolor reprehenderit proident ut cupidatat dolore sunt sit anim. Magna nostrud deserunt adipisicing duis exercitation officia. Aute sint minim anim aute elit nulla consequat ex sit quis irure sit occaecat. Exercitation minim non sunt velit proident occaecat cupidatat consectetur voluptate cillum magna exercitation. Ex laboris aliquip in culpa enim et reprehenderit esse veniam aliquip ex aliquip sunt.\r\n",
+      "currentPosition": "DBA Admin",
+      "skills": "SQL , Postgresql",
+      "jobsApplied": [
+        2,
+        3
+      ]
+    },
+    {
+      "candidateId": 4,
+      "Name": "Shepard Stanley",
+      "email": "shepardstanley@newcube.com",
+      "age": 35,
+      "gender": "male",
+      "resume": "Eu ex nostrud fugiat Lorem deserunt ut aliquip fugiat aliqua excepteur est duis ullamco. Laborum sit ipsum nulla nisi. Laborum veniam Lorem Lorem magna. Ad ea sit nostrud ad consequat ut fugiat non irure.\r\n",
+      "currentPosition": "Java Developer",
+      "skills": "Java, SpringBoot, MVC",
+      "jobsApplied": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "candidateId": 5,
+      "Name": "Rey Buchanan",
+      "email": "rhondabuchanan@newcube.com",
+      "age": 56,
+      "gender": "male",
+      "resume": "Do mollit laborum excepteur in non proident laboris. Veniam cillum officia et enim nisi in nisi ipsum et proident eu. Deserunt elit ex tempor cillum nulla in culpa consequat. Ullamco sit fugiat elit pariatur proident do. Ad consectetur eu non laboris nostrud consectetur consequat consectetur. Irure dolore quis aute cupidatat et ea est sit eu occaecat eiusmod magna. Duis aliqua proident aliquip amet aliquip duis proident ullamco commodo exercitation.\r\n",
+      "currentPosition": "Business Analyst",
+      "skills": "Excel, PowerBI",
+      "jobsApplied": [
+        1,
+        3
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": 2,
+      "title": "Devops Engineer",
+      "skills": "docker, github, splunk, AWS",
+      "jobtype": "fulltime",
+      "salary": "150000",
+      "applicationdeadline": "2023-07-18T20:26",
+      "applicants": "12",
+      "positionsavailable": "2",
+      "employer": "madhava"
+    },
+    {
+      "id": 3,
+      "title": "business analyst",
+      "skills": "PowerBI, Excel",
+      "jobtype": "fulltime",
+      "salary": "120000",
+      "applicationdeadline": "2023-07-22T21:39",
+      "applicants": "12",
+      "positionsavailable": "2",
+      "employer": "papry"
+    },
+    {
+      "title": "android",
+      "skills": "python",
+      "jobtype": "fulltime",
+      "salary": "25000",
+      "applicationdeadline": "",
+      "applicants": "2",
+      "positionsavailable": "2",
+      "employer": "srikar",
+      "id": 4
+    }
+  ]
+}
