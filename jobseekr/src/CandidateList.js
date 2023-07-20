@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 const CandidateList = ({ candidate,  haveedit, haveremove }) => {
     const handleedit = () => {
         if(haveedit){
-        toast.success('edited')
+        toast.success('Called for interview')
         }
         else{
             toast.warning('You are not having access for Edit');
@@ -12,7 +12,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove }) => {
 
     const handleremove = () => {
         if(haveremove){
-        toast.success('removed')
+        toast.success('Rejected')
         }else{
             toast.warning('You are not having access for remove');
         }
