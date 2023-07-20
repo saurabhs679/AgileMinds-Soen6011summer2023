@@ -8,7 +8,6 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform registration logic here, e.g., send data to the backend
-    console.log('Registration successful!');
   };
 
   return (

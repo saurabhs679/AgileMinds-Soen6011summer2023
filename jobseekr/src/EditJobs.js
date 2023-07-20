@@ -37,12 +37,10 @@ const EditJobs = () => {
 
     //const deadline = new Date(job.deadline).toLocaleDateString();
     const handlesubmit = (e) => {
-            console.log(myobj.state)
             e.preventDefault();
             const employer = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
             let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable, employer};
             if (IsValidate()) {
-            console.log(regobj);
             fetch("http://localhost:8000/jobs/" + myobj.state.id, {
                 method: "PUT",
                 headers: { 'content-type': 'application/json' },

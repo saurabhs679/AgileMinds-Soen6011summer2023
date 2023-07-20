@@ -40,7 +40,6 @@ const Candidate = () => {
             }
             return res.json();
         }).then(res => {
-            console.log(res);
             if (res.length > 0) {
                 viewchange(true);
                 let userobj = res[0];
