@@ -12,7 +12,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove }) => {
 
     const handleremove = () => {
         if(haveremove){
-        toast.success('Rejected')
+        toast.error('Rejected')
         }else{
             toast.warning('You are not having access for remove');
         }
