@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import video from './video.mp4';
 const Home = () => {
     const usenavigate = useNavigate();
     const [candidatelist, listupdate] = useState(null);
@@ -27,7 +27,15 @@ const Home = () => {
         <div>
             
             <h1 className="text-center">JobSeekr</h1>
-            {/*<table className="table table-bordered">
+            
+            <video className='videoTag' autoPlay loop muted 
+            style={{minWidth: "100%",minHeight: "100vh",maxWidth: "100%",maxHeight: "100vh",objectFit: "cover",
+            zIndex: "-1", boxSizing:"border-box",backgroundColor: "rgba(35,45,57,0.8)"}}>
+            <source src={video} type='video/mp4' />
+            </video>
+            {
+            
+            /*<table className="table table-bordered">
                 <thead>
                     <tr>
                         <td>Code</td>
