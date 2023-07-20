@@ -32,6 +32,17 @@
       "address": "",
       "gender": "male",
       "role": "employer"
+    },
+    {
+      "id": "saurabh",
+      "name": "Saurabh Sharma",
+      "password": "saurabh",
+      "email": "saurabhs679@gmail.com",
+      "phone": "5146604529",
+      "country": "canada",
+      "address": "shhhh",
+      "gender": "male",
+      "role": "employer"
     }
   ],
   "roleaccess": [
@@ -98,7 +109,8 @@
       "currentPosition": "Devops Engineer",
       "skills": "AWS, Github, Docker, Splunk",
       "jobsApplied": [
-        1
+        1,
+        5
       ]
     },
     {
@@ -112,7 +124,8 @@
       "skills": "SQL , Postgresql",
       "jobsApplied": [
         2,
-        3
+        3,
+        5
       ]
     },
     {
@@ -127,7 +140,8 @@
       "jobsApplied": [
         1,
         2,
-        3
+        3,
+        5
       ]
     },
     {
@@ -141,7 +155,8 @@
       "skills": "Excel, PowerBI",
       "jobsApplied": [
         1,
-        3
+        3,
+        5
       ]
     }
   ],
@@ -178,6 +193,17 @@
       "positionsavailable": "2",
       "employer": "srikar",
       "id": 4
+    },
+    {
+      "title": "Software Engineer",
+      "skills": "Agile, jira",
+      "jobtype": "fulltime",
+      "salary": "200000",
+      "applicationdeadline": "2023-07-21T22:03",
+      "applicants": "10",
+      "positionsavailable": "5",
+      "employer": "saurabh",
+      "id": 5
     }
   ]
 }
