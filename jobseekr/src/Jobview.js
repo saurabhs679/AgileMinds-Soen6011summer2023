@@ -20,15 +20,22 @@ const Jobs = () => {
 
     const loadjob = () => {
         fetch("http://localhost:8000/jobs").then(res => {
+         
             if (!res.ok) {
                 return false
             }
             return res.json();
         }).then(res => {
+            console.log(res);
             const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+            if(username == "adminuser"){
+                
+            }
+            else{
             res = res.filter((e)=>{
                 return e.employer === username;
             })
+        }
             jobupdate(res)
         });
     }
@@ -43,7 +50,6 @@ const Jobs = () => {
             }
             return res.json();
         }).then(res => {
-            console.log(res);
             if (res.length > 0) {
                 viewchange(true);
                 let userobj = res[0];

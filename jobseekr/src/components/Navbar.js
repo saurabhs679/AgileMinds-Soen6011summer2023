@@ -23,7 +23,6 @@ const Navbar = (props) => {
   let history = useHistory();
 
   const handleClick = (location) => {
-    console.log(location);
     history.push(location);
   };
 

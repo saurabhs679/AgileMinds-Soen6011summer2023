@@ -30,7 +30,6 @@ const ViewAppliedCandidates = () => {
             res = res.filter((data)=>{
                 return data.jobsApplied.includes(id);
             })
-            console.log("aaa",res,id);
             candupdate(res)
         });
     }
@@ -45,7 +44,6 @@ const ViewAppliedCandidates = () => {
             // }
             return res.json();
         }).then(res => {
-            console.log(res);
             if (res.length > 0) {
                 viewchange(true);
                 let userobj = res[0];
