@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, json, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Jobs = () => {
@@ -7,7 +7,7 @@ const Jobs = () => {
     const [jobedit, editchange] = useState(false);
     const [jobview, viewchange] = useState(false);
     const [jobadd, addchange] = useState(false);
-    const [jobremove, removechange] = useState(false);
+    const [jobremove, removechange] = useState(true);
 
     const navigate=useNavigate();
 
@@ -65,21 +65,53 @@ const Jobs = () => {
         }
     }
    
-    const handleedit = () => {
-        if(jobedit){
-        toast.success('edited')
-        }
-        else{
-            toast.warning('You are not having access for Edit');
-        }
+    const handleedit = (event) => {
+        const obj = JSON.stringify(event.target.value)
+        navigate('/editjob', {
+            state:{obj}
+        })
     }
 
-    const handleremove = () => {
-        if(jobremove){
-        toast.success('removed')
-        }else{
-            toast.warning('You are not having access for remove');
-        }
+    const handleremove = (event) => {
+        const id_num = Number(event.target.value)
+        fetch("http://localhost:8000/jobs/" + id_num,{
+            method:"DELETE",
+            headers: { 'content-type': 'application/json' },
+        }).then((res)=>{
+            toast.success("Removed")
+            window.location.reload(false);
+                navigate("/jobview")
+        })
+        //     fetch("http://localhost:8000/jobs").then(res => {
+        //     if (!res.ok) {
+        //         return false
+        //     }
+        //     return res.json();
+        // }).then(res =>{
+        //     const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+        //     res = res.filter((e)=>{
+        //         return e.id !== Number(event.target.value)
+        //     })
+            
+        //     console.log(res)
+        //     delete "https://localhost:8000/jobs"
+        //     return fetch("http://localhost:8000/jobs",
+        //     {
+        //         method:"POST",
+        //         headers: { 'content-type': 'application/json' },
+        //         body:JSON.stringify(res)
+        //     }).then(()=>{
+        //         toast.success("Removed")
+        //         navigate("/jobview")
+        //     })
+        // }).catch((err) => {
+        //     toast.error('Failed :' + err.message);
+        // });
+        
+        
+        
+
+        
     }
 
     const handleViewCandidates = (id) => {
@@ -95,9 +127,10 @@ const Jobs = () => {
             <p><b>SKILLS</b>: {jobs.skills}</p>
             <p><b>JOBTYPE</b>: {jobs.jobtype}</p>
             <p><b>SALARY Position</b>: {jobs.salary}</p>
-            <button onClick={(e)=>{handleViewCandidates(jobs.id)}} className="btn btn-primary">View Candidates</button> 
-            <button onClick={handleedit} className="btn btn-primary">Edit</button> 
-            <button onClick={handleremove} className="btn btn-danger">Remove</button>
+            <button onClick={(e)=>{handleViewCandidates(jobs.id)}} className="btn btn-primary btn-spaces">View Candidates</button> 
+            {/* <button onClick={handleedit} className="btn btn-primary btn-spaces" value={jobs}>Edit</button>  */}
+            <Link to="/editjob" state={jobs} className="btn btn-primary btn-spaces">Edit</Link>
+            <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button>
           </div>
         );
       };

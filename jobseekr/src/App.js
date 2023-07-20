@@ -9,6 +9,7 @@ import Appheader from './Appheader';
 import Candidate from './Candidate';
 import Addjobs from './Addjobs';
 import Jobs from './Jobview'
+import EditJobs from './EditJobs'
 import ViewAppliedCandidates from './ViewAppliedCandidates';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/candidate' element={<Candidate/>}></Route>
         <Route path='/addjobs' element={<Addjobs/>}></Route>
         <Route path='/jobview' element={<Jobs/>}></Route>
+        <Route path='/editjob' element={<EditJobs/>}></Route>
         <Route path='/viewappliedcandidates/:id' element={<ViewAppliedCandidates/>}></Route>
       </Routes>
       

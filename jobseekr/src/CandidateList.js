@@ -27,8 +27,8 @@ const CandidateList = ({ candidate,  haveedit, haveremove }) => {
         <p><b>GENDER</b>: {candidate.gender}</p>
         <p><b>CURRENT POSITION</b>: {candidate.currentPosition}</p>
         <p><b>SKILLS</b>: {candidate.skills}</p>
-        <button onClick={handleedit} className="btn btn-primary">Edit</button> 
-        <button onClick={handleremove} className="btn btn-danger">Remove</button>
+        <button onClick={handleedit} className="btn btn-primary btn-spaces">Call for Interview</button> 
+        <button onClick={handleremove} className="btn btn-danger">Reject</button>
       </div>
     );
   };

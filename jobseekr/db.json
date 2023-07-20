@@ -84,7 +84,8 @@
       "currentPosition": "Python Developer",
       "skills": "Python",
       "jobsApplied": [
-        1,2
+        1,
+        2
       ]
     },
     {
@@ -110,7 +111,8 @@
       "currentPosition": "DBA Admin",
       "skills": "SQL , Postgresql",
       "jobsApplied": [
-        2,3
+        2,
+        3
       ]
     },
     {
@@ -123,7 +125,9 @@
       "currentPosition": "Java Developer",
       "skills": "Java, SpringBoot, MVC",
       "jobsApplied": [
-        1,2,3
+        1,
+        2,
+        3
       ]
     },
     {
@@ -136,23 +140,14 @@
       "currentPosition": "Business Analyst",
       "skills": "Excel, PowerBI",
       "jobsApplied": [
-        1,3
+        1,
+        3
       ]
     }
   ],
   "jobs": [
     {
-      "title": "Analyst",
-      "skills": "SQL, PowerBI, Python, Excel",
-      "jobtype": "fulltime",
-      "salary": "110000",
-      "applicationdeadline": "2023-07-18T00:17",
-      "applicants": "10",
-      "positionsavailable": "1",
-      "id": 1,
-      "employer": "srikar"
-    },
-    {
+      "id": 2,
       "title": "Devops Engineer",
       "skills": "docker, github, splunk, AWS",
       "jobtype": "fulltime",
@@ -160,9 +155,10 @@
       "applicationdeadline": "2023-07-18T20:26",
       "applicants": "12",
       "positionsavailable": "2",
-      "id": 2
+      "employer": "madhava"
     },
     {
+      "id": 3,
       "title": "business analyst",
       "skills": "PowerBI, Excel",
       "jobtype": "fulltime",
@@ -170,7 +166,18 @@
       "applicationdeadline": "2023-07-22T21:39",
       "applicants": "12",
       "positionsavailable": "2",
-      "id": 3
+      "employer": "papry"
+    },
+    {
+      "title": "android",
+      "skills": "python",
+      "jobtype": "fulltime",
+      "salary": "25000",
+      "applicationdeadline": "",
+      "applicants": "2",
+      "positionsavailable": "2",
+      "employer": "srikar",
+      "id": 4
     }
   ]
 }

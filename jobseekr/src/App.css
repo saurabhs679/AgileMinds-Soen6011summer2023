@@ -114,3 +114,6 @@ h1 {
 .form-control-dropdown{
   appearance: auto !important;
 }
+.btn-spaces{
+  margin-bottom: 1rem;
+}
