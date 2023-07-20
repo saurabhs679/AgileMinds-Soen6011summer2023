@@ -136,6 +136,12 @@ A Sprint plan is available under
 npm install
 npm start
 
+### Summary of features developed for Sprint 2:
+We implemented a login and register feature, created a JSON file which acts like a DB, 
+employer dashboard where an employer can add jobs and remove jobs also see a list of employees who applied for that job and tracking functionality
+to add tracking features for posted jobs and applied candidates.
+
+
 ## Conclusion
 The career services platform provides a comprehensive solution for job seekers and employers to connect and streamline the hiring process. 
 With its user-friendly interface and robust features, the platform aims to revolutionize the way students find jobs and employers identify top talent. 
