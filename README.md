@@ -133,7 +133,7 @@ A Sprint plan is available under
  npx json-server --watch db.json --port 8000
  
 ### Command to run frontend
-npm install --legacy-peer-deps 
+npm install --legacy-peer-deps  
 npm start
 
 ### Summary of features developed for Sprint 2:
