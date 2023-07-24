@@ -1,8 +1,16 @@
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
-const CandidateList = ({ candidate,  haveedit, haveremove }) => {
+const CandidateList = ({ candidate,  haveedit, haveremove, userrole }) => {
+  const [userRole, setUserRole] = useState("");
+
+  useEffect(()=>{
+    const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
+    setUserRole(userrole);
+  },[])
     const handleedit = () => {
-        if(haveedit){
+      console.log(userRole);
+        if(userRole === "employer"){
         toast.success('Called for interview')
         }
         else{
@@ -11,7 +19,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove }) => {
     }
 
     const handleremove = () => {
-        if(haveremove){
+        if(userRole === "employer"){
         toast.error('Rejected')
         }else{
             toast.warning('You are not having access for remove');
