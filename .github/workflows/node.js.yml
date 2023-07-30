@@ -21,4 +21,4 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./jobseekr/package.json
+        working-directory: ./jobseekr
