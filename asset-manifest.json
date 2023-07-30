@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/AgileMinds-Soen6011summer2023/static/css/main.ec05529c.css",
-    "main.js": "/AgileMinds-Soen6011summer2023/static/js/main.0d76d705.js",
-    "static/media/login-img.png": "/AgileMinds-Soen6011summer2023/static/media/login-img.5dcd4b758cbc25ad3f4c.png",
-    "static/media/job-search.png": "/AgileMinds-Soen6011summer2023/static/media/job-search.17f4ba088afe93b2c091.png",
-    "index.html": "/AgileMinds-Soen6011summer2023/index.html",
-    "main.ec05529c.css.map": "/AgileMinds-Soen6011summer2023/static/css/main.ec05529c.css.map",
-    "main.0d76d705.js.map": "/AgileMinds-Soen6011summer2023/static/js/main.0d76d705.js.map"
+    "main.css": "/jobseekr/static/css/main.e933109d.css",
+    "main.js": "/jobseekr/static/js/main.2aa49b6e.js",
+    "static/js/787.2b95c13b.chunk.js": "/jobseekr/static/js/787.2b95c13b.chunk.js",
+    "static/media/video.mp4": "/jobseekr/static/media/video.72decabbd53a9d80ebfe.mp4",
+    "index.html": "/jobseekr/index.html",
+    "main.e933109d.css.map": "/jobseekr/static/css/main.e933109d.css.map",
+    "main.2aa49b6e.js.map": "/jobseekr/static/js/main.2aa49b6e.js.map",
+    "787.2b95c13b.chunk.js.map": "/jobseekr/static/js/787.2b95c13b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec05529c.css",
-    "static/js/main.0d76d705.js"
+    "static/css/main.e933109d.css",
+    "static/js/main.2aa49b6e.js"
   ]
 }
