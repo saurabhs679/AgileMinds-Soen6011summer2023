@@ -24,6 +24,7 @@ jobs:
         working-directory: ./jobseekr
       - name: Generate build
         run: npm run build
+        working-directory: ./jobseekr
       # Share artifact inside workflow
       - name: Share artifact inside workflow
         uses: actions/upload-artifact@v1
