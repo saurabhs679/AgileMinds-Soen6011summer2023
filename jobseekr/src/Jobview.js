@@ -20,6 +20,7 @@ const Jobs = () => {
     }, []);
     function loadCandidates(){
         const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+        const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
         fetch("http://localhost:8000/Candidates/").then(res =>{
             if (!res.ok) {
                 navigate('/');
@@ -32,8 +33,8 @@ const Jobs = () => {
                 return username === name.user_id
             })
             console.log("aaaa", current_profile);
-            if(current_profile.length === 0){
-               toast.warning("No Jobs Appied");
+            if(current_profile.length === 0 && userrole === "candidate"){
+               toast.warning("No Jobs Applied");
             }else{
                 updateJobsApplied(current_profile[0].jobsApplied)
             }
