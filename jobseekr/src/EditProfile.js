@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const Register = () => {
+const EditProfile = () => {
 
-    const [id, idchange] = useState("");
-    const [role, changeRoleType] = useState("");
+    
+    
     const [name, namechange] = useState("");
     const [password, passwordchange] = useState("");
     const [email, emailchange] = useState("");
@@ -13,20 +13,37 @@ const Register = () => {
     const [country, countrychange] = useState("canada");
     const [address, addresschange] = useState("");
     const [gender, genderchange] = useState("male");
-
+    const [role, updateRole] = useState("")
+    const [id, updateUserID] = useState("")
+    useEffect(()=>{
+        loadUser()
+    },[])
     const navigate = useNavigate();
-
+    const loadUser = () =>{
+        const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+        fetch("http://localhost:8000/user/" + username).then(res =>{
+            if (!res.ok) {
+                navigate('/');
+                return false;
+            }
+            return res.json();
+        }).then((res)=>{
+            console.log(res)
+            updateRole(res.role)
+            updateUserID(res.id)
+            namechange(res.name)
+            passwordchange(res.password)
+            emailchange(res.email)
+            phonechange(res.phone)
+            countrychange(res.country)
+            addresschange(res.address)
+            genderchange(res.gender)
+        })
+    }
     const IsValidate = () => {
         let isproceed = true;
         let errormessage = 'Please enter the value in ';
-        if (role === null || role === '') {
-            isproceed = false;
-            errormessage += ' Role';
-        }
-        if (id === null || id === '') {
-            isproceed = false;
-            errormessage += ' Username';
-        }
+        
         if (name === null || name === '') {
             isproceed = false;
             errormessage += ' Fullname';
@@ -56,16 +73,17 @@ const Register = () => {
 
     const handlesubmit = (e) => {
             e.preventDefault();
-            let regobj = { id, name, password, email, phone, country, address, gender, role };
+            let regobj = { id, role, name, password, email, phone, country, address, gender };
             if (IsValidate()) {
             //console.log(regobj);
-            fetch("http://localhost:8000/user", {
-                method: "POST",
+            const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+            fetch("http://localhost:8000/user/" + username, {
+                method: "PUT",
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(regobj)
             }).then((res) => {
-                toast.success('Registered successfully.')
-                navigate('/login');
+                toast.success('Change Made successfully.')
+                navigate('/');
             }).catch((err) => {
                 toast.error('Failed :' + err.message);
             });
@@ -82,22 +100,8 @@ const Register = () => {
                         <div className="card-body">
 
                             <div className="row">
-                            <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <label for="role">Role<span className="errmsg">*</span></label>
-                                            <select name="role" id="role" onChange={e => changeRoleType(e.target.value)} className="form-control-dropdown form-control">
-                                            <option value="">Select..</option>
-                                            <option value="employer">Employer</option>
-                                            <option value="candidate">Candidate</option>
-                                            </select>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <label>User Name <span className="errmsg">*</span></label>
-                                        <input value={id} onChange={e => idchange(e.target.value)} className="form-control"></input>
-                                    </div>
-                                </div>
+                            
+                                
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <label>Password <span className="errmsg">*</span></label>
@@ -153,8 +157,8 @@ const Register = () => {
 
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Register</button> |
-                            <Link to={'/login'} className="btn btn-danger">Close</Link>
+                            <button type="submit" className="btn btn-primary">Save</button> |
+                            <Link to={'/'} className="btn btn-danger">Close</Link>
                         </div>
                     </div>
                 </form>
@@ -165,4 +169,4 @@ const Register = () => {
     );
 }
 
-export default Register;
+export default EditProfile;

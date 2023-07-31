@@ -6,10 +6,10 @@ import CandidateList from "./CandidateList";
 const ViewAppliedCandidates = () => {
      let { id } = useParams();
     const [candlist, candupdate] = useState([]);
-    const [haveedit, editchange] = useState(false);
-    const [haveview, viewchange] = useState(false);
-    const [haveadd, addchange] = useState(false);
-    const [haveremove, removechange] = useState(false);
+    const [haveedit, editchange] = useState(true);
+    const [haveview, viewchange] = useState(true);
+    const [haveadd, addchange] = useState(true);
+    const [haveremove, removechange] = useState(true);
 
     const navigate=useNavigate();
 

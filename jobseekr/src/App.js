@@ -10,6 +10,10 @@ import Addjobs from './Addjobs';
 import Jobs from './Jobview'
 import EditJobs from './EditJobs'
 import ViewAppliedCandidates from './ViewAppliedCandidates';
+import Application from './Application';
+import CandidateAppliedJobs from './CandidateAppliedJobs';
+import EditProfile from './EditProfile';
+
 
 function App() {
 
@@ -26,7 +30,10 @@ function App() {
         <Route path='/addjobs' element={<Addjobs/>}></Route>
         <Route path='/jobview' element={<Jobs/>}></Route>
         <Route path='/editjob' element={<EditJobs/>}></Route>
+        <Route path='/viewjobs' element={<CandidateAppliedJobs/>}></Route>
         <Route path='/viewappliedcandidates/:id' element={<ViewAppliedCandidates/>}></Route>
+        <Route path='/application/:id' element={<Application/>}></Route>
+        <Route path='/editprofile' element={<EditProfile />}></Route>
       </Routes>
       
       </BrowserRouter>

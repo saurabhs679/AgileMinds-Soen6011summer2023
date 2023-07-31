@@ -8,16 +8,38 @@ const Jobs = () => {
     const [jobview, viewchange] = useState(false);
     const [jobadd, addchange] = useState(false);
     const [jobremove, removechange] = useState(true);
+    const [jobsApplied, updateJobsApplied] = useState(null);
 
     const navigate=useNavigate();
 
-
+    
     useEffect(() => {
         GetUserAccess();
         loadjob();
-       
+       loadCandidates()
     }, []);
-
+    function loadCandidates(){
+        const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+        fetch("http://localhost:8000/Candidates/").then(res =>{
+            if (!res.ok) {
+                navigate('/');
+                return false;
+            }
+            return res.json();
+        }).then((res)=>{
+            
+            const current_profile = res.filter((name)=>{
+                return username === name.user_id
+            })
+            console.log("aaaa", current_profile);
+            if(current_profile.length === 0){
+               toast.warning("No Jobs Appied");
+            }else{
+                updateJobsApplied(current_profile[0].jobsApplied)
+            }
+        })
+        
+    }
     const loadjob = () => {
         fetch("http://localhost:8000/jobs").then(res => {
          
@@ -27,21 +49,20 @@ const Jobs = () => {
             return res.json();
         }).then(res => {
             console.log(res);
+            const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
             const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
-            if(username == "adminuser"){
-                
+            if(userrole === "employer"){
+                res = res.filter((e)=>{
+                    return e.employer === username;
+                })
             }
-            else{
-            res = res.filter((e)=>{
-                return e.employer === username;
-            })
-        }
             jobupdate(res)
         });
     }
 
     const GetUserAccess = () => {
         const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
+        console.log(userrole)
         fetch("http://localhost:8000/roleaccess?role=" + userrole + "&menu=jobs").then(res => {
             if (!res.ok) {
                 navigate('/');
@@ -64,7 +85,8 @@ const Jobs = () => {
     }
 
     const handleadd = () => {
-        if(jobadd){
+        const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
+        if(userrole === "adminuser"){
         toast.success('added')
         }else{
             toast.warning('You are not having access for add');
@@ -119,12 +141,31 @@ const Jobs = () => {
 
         
     }
-
+    const applyApplication = (id) => {
+        navigate(`/application/${id}`)
+    }
     const handleViewCandidates = (id) => {
         navigate(`/viewappliedcandidates/${id}`);
     }
 
     const Job = ({ jobs }) => {
+        const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
+        let buttons = <>
+        <button onClick={(e)=>{handleViewCandidates(jobs.id)}} className="btn btn-primary btn-spaces">View Candidates</button> 
+            {/* <button onClick={handleedit} className="btn btn-primary btn-spaces" value={jobs}>Edit</button>  */}
+            <Link to="/editjob" state={jobs} className="btn btn-primary btn-spaces">Edit</Link>
+            <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button></>
+        if(userrole === "candidate"){
+            if(jobsApplied&&jobsApplied.includes(jobs.id)){
+                buttons = <>
+            <button className="btn btn-primary btn-spaces">Already Applied</button> 
+            </>
+            }else{
+                buttons = <>
+            <button onClick={(e)=>{applyApplication((jobs.id))}} className="btn btn-primary btn-spaces">Apply</button> 
+            </>
+            }
+        }
         return (
           <div className="card">
             <h5>{jobs.title}</h5>
@@ -133,10 +174,7 @@ const Jobs = () => {
             <p><b>SKILLS</b>: {jobs.skills}</p>
             <p><b>JOBTYPE</b>: {jobs.jobtype}</p>
             <p><b>SALARY Position</b>: {jobs.salary}</p>
-            <button onClick={(e)=>{handleViewCandidates(jobs.id)}} className="btn btn-primary btn-spaces">View Candidates</button> 
-            {/* <button onClick={handleedit} className="btn btn-primary btn-spaces" value={jobs}>Edit</button>  */}
-            <Link to="/editjob" state={jobs} className="btn btn-primary btn-spaces">Edit</Link>
-            <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button>
+            {buttons}
           </div>
         );
       };

@@ -6,6 +6,12 @@ const Appheader = () => {
     const [showmenu, showmenuupdateupdate] = useState(false);
     const usenavigate = useNavigate();
     const location = useLocation();
+    const userrole = sessionStorage.getItem('userrole') != null ? sessionStorage.getItem('userrole').toString() : '';
+
+    let access = "/addjobs"
+    if (userrole === "candidate"){
+        access = "/"
+    }
     useEffect(() => {
         if (location.pathname === '/login' || location.pathname === '/register') {
             showmenuupdateupdate(false);
@@ -27,9 +33,9 @@ const Appheader = () => {
 
                     <Link to={'/'}>Home</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
-                    <Link to={'/candidate'}>Candidate</Link>
+                    <Link to={userrole === "candidate" ? '/editprofile' : '/candidate'}>{userrole === "candidate" ? 'My Profile': "View Candidates"}</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
-                    <Link to={'/addjobs'}>Add Jobs</Link>
+                    <Link to={(userrole === "candidate" || userrole === "admin") ? "/viewjobs" : "/addjobs"}>{(userrole === "candidate" || userrole === "admin") ? "View Jobs" : "Add Jobs"}</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
                     <Link to={'/jobview'}>Posted Jobs</Link>
                     <span style={{ marginLeft: '55%' }}>Welcome <b>{displayusername}</b></span>
