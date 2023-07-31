@@ -12,6 +12,7 @@ import EditJobs from './EditJobs'
 import ViewAppliedCandidates from './ViewAppliedCandidates';
 import Application from './Application';
 import CandidateAppliedJobs from './CandidateAppliedJobs';
+import EditProfile from './EditProfile';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/viewjobs' element={<CandidateAppliedJobs/>}></Route>
         <Route path='/viewappliedcandidates/:id' element={<ViewAppliedCandidates/>}></Route>
         <Route path='/application/:id' element={<Application/>}></Route>
+        <Route path='/editprofile' element={<EditProfile />}></Route>
       </Routes>
       
       </BrowserRouter>

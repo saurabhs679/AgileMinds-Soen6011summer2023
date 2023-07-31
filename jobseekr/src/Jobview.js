@@ -8,6 +8,7 @@ const Jobs = () => {
     const [jobview, viewchange] = useState(false);
     const [jobadd, addchange] = useState(false);
     const [jobremove, removechange] = useState(true);
+    const [jobsApplied, updateJobsApplied] = useState(null);
 
     const navigate=useNavigate();
 
@@ -15,9 +16,30 @@ const Jobs = () => {
     useEffect(() => {
         GetUserAccess();
         loadjob();
-       
+       loadCandidates()
     }, []);
-    
+    function loadCandidates(){
+        const username = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
+        fetch("http://localhost:8000/Candidates/").then(res =>{
+            if (!res.ok) {
+                navigate('/');
+                return false;
+            }
+            return res.json();
+        }).then((res)=>{
+            
+            const current_profile = res.filter((name)=>{
+                return username === name.user_id
+            })
+            console.log("aaaa", current_profile);
+            if(current_profile.length === 0){
+               toast.warning("No Jobs Appied");
+            }else{
+                updateJobsApplied(current_profile[0].jobsApplied)
+            }
+        })
+        
+    }
     const loadjob = () => {
         fetch("http://localhost:8000/jobs").then(res => {
          
@@ -134,9 +156,15 @@ const Jobs = () => {
             <Link to="/editjob" state={jobs} className="btn btn-primary btn-spaces">Edit</Link>
             <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button></>
         if(userrole === "candidate"){
-            buttons = <>
+            if(jobsApplied.includes(jobs.id)){
+                buttons = <>
+            <button className="btn btn-primary btn-spaces">Already Applied</button> 
+            </>
+            }else{
+                buttons = <>
             <button onClick={(e)=>{applyApplication((jobs.id))}} className="btn btn-primary btn-spaces">Apply</button> 
             </>
+            }
         }
         return (
           <div className="card">

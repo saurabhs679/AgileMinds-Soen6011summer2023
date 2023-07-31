@@ -46,14 +46,14 @@
     },
     {
       "id": "akella",
+      "role": "candidate",
       "name": "srikar akella",
       "password": "akella",
       "email": "akella@gmail.com",
       "phone": "5146604529",
       "country": "canada",
-      "address": "shhhh",
-      "gender": "male",
-      "role": "candidate"
+      "address": "abbaba",
+      "gender": "male"
     },
     {
       "id": "supra",

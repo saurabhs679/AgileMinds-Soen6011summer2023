@@ -33,7 +33,7 @@ const Appheader = () => {
 
                     <Link to={'/'}>Home</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
-                    <Link to={'/candidate'}>Candidate</Link>
+                    <Link to={userrole === "candidate" ? '/editprofile' : '/candidate'}>{userrole === "candidate" ? 'My Profile': "View Candidates"}</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
                     <Link to={(userrole === "candidate" || userrole === "admin") ? "/viewjobs" : "/addjobs"}>{(userrole === "candidate" || userrole === "admin") ? "View Jobs" : "Add Jobs"}</Link>
                     <span style={{ marginLeft: '2.5%' }}></span>
