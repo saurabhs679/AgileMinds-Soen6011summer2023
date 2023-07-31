@@ -43,18 +43,51 @@
       "address": "shhhh",
       "gender": "male",
       "role": "employer"
+    },
+    {
+      "id": "akella",
+      "name": "srikar akella",
+      "password": "akella",
+      "email": "akella@gmail.com",
+      "phone": "5146604529",
+      "country": "canada",
+      "address": "shhhh",
+      "gender": "male",
+      "role": "candidate"
+    },
+    {
+      "id": "supra",
+      "name": "supra",
+      "password": "akella",
+      "email": "srikarvishnudatta@gmail.com",
+      "phone": "5146495802",
+      "country": "canada",
+      "address": "qffqf",
+      "gender": "male",
+      "role": "candidate"
+    },
+    {
+      "id": "vamsi",
+      "name": "vamsi",
+      "password": "vamsi",
+      "email": "srikarvishnudatta@gmail.com",
+      "phone": "5146495802",
+      "country": "canada",
+      "address": "fsfs",
+      "gender": "male",
+      "role": "candidate"
     }
   ],
   "roleaccess": [
     {
       "role": "admin",
       "menu": "Candidates",
-      "haveadd": true,
-      "haveedit": true,
-      "havedelete": true,
-      "jobedit": true,
-      "jobadd": true,
-      "jobremove": true
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false,
+      "jobedit": false,
+      "jobadd": false,
+      "jobremove": false
     },
     {
       "role": "admin",
@@ -82,25 +115,38 @@
       "jobedit": true,
       "jobadd": true,
       "jobremove": true
+    },
+    {
+      "role": "candidate",
+      "menu": "jobs",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true,
+      "jobedit": false,
+      "jobadd": false,
+      "jobremove": false
     }
   ],
   "Candidates": [
     {
-      "candidateId": 1,
-      "Name": "Terry Ortega",
+      "id": 1,
+      "user_id": "a",
+      "Name": "dddTerry Ortega",
       "email": "terryortega@newcube.com",
       "age": 27,
       "gender": "female",
       "resume": "Anim ad ad deserunt dolor consectetur quis excepteur aute nostrud. Nisi veniam enim commodo laboris aliquip aliqua pariatur enim laborum consequat exercitation. Sint incididunt aliqua proident nisi eu duis qui nostrud mollit laborum duis laboris proident est.\r\n",
       "currentPosition": "Python Developer",
       "skills": "Python",
+      "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
+        2,
         2
       ]
     },
     {
-      "candidateId": 2,
+      "id": 2,
       "Name": "Maude Holcomb",
       "email": "maudeholcomb@newcube.com",
       "age": 50,
@@ -108,13 +154,14 @@
       "resume": "Laboris sint qui ad sint ea do aliquip reprehenderit culpa quis consectetur est. Commodo in ut ex exercitation velit mollit. Sit mollit ad elit occaecat anim consequat consequat eu ipsum aute voluptate aute nisi deserunt. Proident veniam ad et tempor. Proident pariatur ipsum proident veniam magna exercitation cupidatat excepteur adipisicing reprehenderit dolore eu veniam fugiat. Sunt elit eu voluptate consequat culpa laboris enim ex ea.\r\n",
       "currentPosition": "Devops Engineer",
       "skills": "AWS, Github, Docker, Splunk",
+      "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
         5
       ]
     },
     {
-      "candidateId": 3,
+      "id": 3,
       "Name": "Rosanna Tyson",
       "email": "rosannatyson@newcube.com",
       "age": 32,
@@ -122,6 +169,7 @@
       "resume": "Tempor est quis mollit exercitation ipsum esse laborum et esse reprehenderit velit proident labore proident. Veniam eiusmod eiusmod dolor reprehenderit proident ut cupidatat dolore sunt sit anim. Magna nostrud deserunt adipisicing duis exercitation officia. Aute sint minim anim aute elit nulla consequat ex sit quis irure sit occaecat. Exercitation minim non sunt velit proident occaecat cupidatat consectetur voluptate cillum magna exercitation. Ex laboris aliquip in culpa enim et reprehenderit esse veniam aliquip ex aliquip sunt.\r\n",
       "currentPosition": "DBA Admin",
       "skills": "SQL , Postgresql",
+      "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         2,
         3,
@@ -129,7 +177,7 @@
       ]
     },
     {
-      "candidateId": 4,
+      "id": 4,
       "Name": "Shepard Stanley",
       "email": "shepardstanley@newcube.com",
       "age": 35,
@@ -137,6 +185,7 @@
       "resume": "Eu ex nostrud fugiat Lorem deserunt ut aliquip fugiat aliqua excepteur est duis ullamco. Laborum sit ipsum nulla nisi. Laborum veniam Lorem Lorem magna. Ad ea sit nostrud ad consequat ut fugiat non irure.\r\n",
       "currentPosition": "Java Developer",
       "skills": "Java, SpringBoot, MVC",
+      "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
         2,
@@ -145,18 +194,36 @@
       ]
     },
     {
-      "candidateId": 5,
+      "id": 5,
       "Name": "Rey Buchanan",
       "email": "rhondabuchanan@newcube.com",
       "age": 56,
       "gender": "male",
       "resume": "Do mollit laborum excepteur in non proident laboris. Veniam cillum officia et enim nisi in nisi ipsum et proident eu. Deserunt elit ex tempor cillum nulla in culpa consequat. Ullamco sit fugiat elit pariatur proident do. Ad consectetur eu non laboris nostrud consectetur consequat consectetur. Irure dolore quis aute cupidatat et ea est sit eu occaecat eiusmod magna. Duis aliqua proident aliquip amet aliquip duis proident ullamco commodo exercitation.\r\n",
       "currentPosition": "Business Analyst",
+      "address": "2000 Blvd Maisoneuvenue",
       "skills": "Excel, PowerBI",
       "jobsApplied": [
         1,
         3,
         5
+      ]
+    },
+    {
+      "id": 6,
+      "user_id": "akella",
+      "Name": "sr",
+      "email": "srikarvishnudatta@gmail.com",
+      "age": "22",
+      "gender": "",
+      "resume": "",
+      "currentPosition": "",
+      "skills": "sgsg",
+      "address": "sgsg",
+      "jobsApplied": [
+        2,
+        3,
+        6
       ]
     }
   ],
@@ -184,6 +251,7 @@
       "employer": "papry"
     },
     {
+      "id": 4,
       "title": "android",
       "skills": "python",
       "jobtype": "fulltime",
@@ -191,10 +259,10 @@
       "applicationdeadline": "",
       "applicants": "2",
       "positionsavailable": "2",
-      "employer": "srikar",
-      "id": 4
+      "employer": "srikar"
     },
     {
+      "id": 5,
       "title": "Software Engineer",
       "skills": "Agile, jira",
       "jobtype": "fulltime",
@@ -202,8 +270,18 @@
       "applicationdeadline": "2023-07-21T22:03",
       "applicants": "10",
       "positionsavailable": "5",
-      "employer": "saurabh",
-      "id": 5
+      "employer": "saurabh"
+    },
+    {
+      "title": "react deve",
+      "skills": "react, dom, js",
+      "jobtype": "fulltime",
+      "salary": "25000",
+      "applicationdeadline": "",
+      "applicants": "2",
+      "positionsavailable": "2",
+      "employer": "srikar",
+      "id": 6
     }
   ]
 }

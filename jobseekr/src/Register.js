@@ -88,7 +88,7 @@ const Register = () => {
                                             <select name="role" id="role" onChange={e => changeRoleType(e.target.value)} className="form-control-dropdown form-control">
                                             <option value="">Select..</option>
                                             <option value="employer">Employer</option>
-                                            <option value="Candidate">Candidate</option>
+                                            <option value="candidate">Candidate</option>
                                             </select>
                                     </div>
                                 </div>
