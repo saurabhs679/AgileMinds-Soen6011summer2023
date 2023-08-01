@@ -1,0 +1,36 @@
+name: CI/CD Workflow
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+        working-directory: ./jobseekr
+      - name: Test
+        run: npm test
+        working-directory: ./jobseekr
+      - name: Generate build
+        run: npm run build
+        working-directory: ./jobseekr
+      # Share artifact inside workflow
+      - name: Share artifact inside workflow
+        uses: actions/upload-artifact@v1
+        with:
+          name: react-github-actions-build
+          path: ./jobseekr/build

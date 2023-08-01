@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Addjobs = () => {
 
     const [title, titlechange] = useState("");
-    const [skills, skillschange] = useState("");
+    const [skills, skillschange] = useState([]);
+    const [tempSkill, setTempSkill] = useState("");
     const [jobtype, jobtypechange] = useState("");
     const [salary, salarychange] = useState("");
     const [applicationdeadline, applicationdeadlinechange] = useState("");
@@ -13,6 +14,7 @@ const Addjobs = () => {
     const [positionsavailable, positionsavailablechange] = useState("");
 
     const navigate = useNavigate();
+   // const tagInput = useRef(null);
 
     const IsValidate = () => {
         let isproceed = true;
@@ -37,7 +39,7 @@ const Addjobs = () => {
 
     //const deadline = new Date(job.deadline).toLocaleDateString();
     const handlesubmit = (e) => {
-   
+            console.log("sadsdf");
             e.preventDefault();
             const employer = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
             let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable, employer, applicantsStatus:[]};
@@ -54,10 +56,30 @@ const Addjobs = () => {
             });
         }
     }
+    const removeSkill = (i) => {
+        const newTags = [ ...skills ];
+        newTags.splice(i, 1);
+    
+        // Call the defined function setTags which will replace tags with the new value.
+        skillschange(newTags);
+      };
+    const inputKeyDown = (e) => {
+        const val = e.target.value;
+        if (e.key === 'Enter' && val) {
+          if (skills.find(tag => tag.toLowerCase() === val.toLowerCase())) {
+            return;
+          }
+          skillschange([...skills, val]);
+          setTempSkill("");
+          //tagInput.value = null;
+        } else if (e.key === 'Backspace' && !val) {
+          removeSkill(skills.length - 1);
+        }
+      };
     return (
         <div>
             <div className="offset-lg-3 col-lg-6">
-                <form className="container" onSubmit={handlesubmit}>
+                <form className="container">
                     <div className="card">
                         <div className="card-header">
                             <h3>ADD JOBS</h3>
@@ -74,7 +96,19 @@ const Addjobs = () => {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <label>Skills <span className="errmsg">*</span></label>
-                                        <input value={skills} onChange={e => skillschange(e.target.value)} className="form-control"></input>
+                                        {/* <input value={skills} onChange={e => skillschange(e.target.value)} className="form-control"></input> */}
+                                        <div className="input-tag">
+                                        <ul className="input-tag__tags">
+                                            { skills.map((tag, i) => (
+                                            <li key={tag}>
+                                                {tag}
+                                                <button type="button" onClick={() => { removeSkill(i) }}>+</button>
+                                            </li>
+                                            ))}
+                                            <li className="input-tag__tags__input"><input type="text" onKeyDown={inputKeyDown} 
+                                        value={tempSkill} onChange={e => setTempSkill(e.target.value)} /></li>
+                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -120,7 +154,7 @@ const Addjobs = () => {
 
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Add</button> |
+                            <div className="btn btn-primary" onClick={handlesubmit}>Add</div> |
                             <Link to={'/home'} className="btn btn-danger">Close</Link>
                         </div>
                    </div>

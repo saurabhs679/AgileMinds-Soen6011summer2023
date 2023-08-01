@@ -13,6 +13,7 @@
 
     const [myID, updateID] = useState(0)
     const [newUser, updateNewUser] = useState(true)
+    const [tempSkill, setTempSkill] = useState("");
     const [formData, updateDataForm] = useState({
         id: "",
         user_id: "",
@@ -22,7 +23,7 @@
         gender: "",
         resume: "",
         currentPosition: "",
-        skills: "",
+        skills: [],
         address:"",
         jobsApplied: []
       })
@@ -89,7 +90,27 @@
         });
         }
     }
-    return <form onSubmit={submitHandler}>
+    const removeSkill = (i) => {
+        const newTags = [ ...formData.skills ];
+        newTags.splice(i, 1);
+    
+        // Call the defined function setTags which will replace tags with the new value.
+        updateDataForm({...formData, skills: newTags })
+      };
+    const inputKeyDown = (e) => {
+        const val = e.target.value;
+        if (e.key === 'Enter' && val) {
+          if (formData.skills.find(tag => tag.toLowerCase() === val.toLowerCase())) {
+            return;
+          }
+          updateDataForm({...formData, skills: [...formData.skills, val] })
+          setTempSkill("");
+          //tagInput.value = null;
+        } else if (e.key === 'Backspace' && !val) {
+          removeSkill(formData.skills.length - 1);
+        }
+      };
+    return <form>
     <div class = "form_container">
     <div class="form_control">
         <label for = "first_name">Name</label>
@@ -126,7 +147,7 @@
     </div>
     <div class="form_control "> 
         <label for = "skills">Skills</label>
-        <input
+        {/* <input
         type= "text"
         id="skills"
         name="skills"
@@ -134,7 +155,19 @@
         required
         defaultValue={formData.skills}
         onChange={e => {updateDataForm({...formData, skills: e.target.value })}}
-        />
+        /> */}
+         <div className="input-tag">
+            <ul className="input-tag__tags">
+                { formData.skills.map((tag, i) => (
+                    <li key={tag}>
+                        {tag}
+                        <button type="button" onClick={() => { removeSkill(i) }}>+</button>
+                    </li>
+                 ))}
+             <li className="input-tag__tags__input"><input type="text" onKeyDown={inputKeyDown} 
+                value={tempSkill} onChange={e => setTempSkill(e.target.value)} /></li>
+            </ul>
+        </div>
     </div>
     <div class="textarea_control"> 
         <label for = "address">Address</label>
@@ -162,7 +195,7 @@
         />
     </div>
     <div class="button_container"> 
-      <button type="submit" > Apply Now</button> 
+      <div type="submit" onClick={submitHandler}> Apply Now</div> 
     </div>
     </div>
 </form>

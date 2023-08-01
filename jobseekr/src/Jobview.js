@@ -157,7 +157,7 @@ const Jobs = () => {
             <Link to="/editjob" state={jobs} className="btn btn-primary btn-spaces">Edit</Link>
             <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button></>
         if(userrole === "candidate"){
-            if(jobsApplied.includes(jobs.id)){
+            if(jobsApplied&&jobsApplied.includes(jobs.id)){
                 buttons = <>
             <button className="btn btn-primary btn-spaces">Already Applied</button> 
             </>
