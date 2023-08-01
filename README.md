@@ -102,13 +102,35 @@ React is a popular JavaScript library used for building user interfaces in web d
 
 The Backend, the System will employ file-based storage to manage static data using JavaScript and Node.Js. This static data will be represented as objects and stored within files. The purpose of storing this data in files is to facilitate data presentation and data persistence. The System will read the data from these files to display it to the users, and it will also save any changes or new data by writing the updated objects back to the files. This approach allows for efficient retrieval and storage of static data, ensuring that the System can effectively showcase and maintain the information it contains.
 
-## Upcoming Sprint: Sprint 3
+## Upcoming Sprint: Sprint 4
 A Sprint plan is available under  
-- [Sprint 3- Plan](https://github.com/users/saurabhs679/projects/3)
+- [Sprint 4- Plan](https://github.com/users/saurabhs679/projects/4)
 
-## Completed Sprint: Sprint 2  
+## Completed Sprint: Sprint 3  
 A Sprint plan is available under  
-- [Sprint 2 - Plan](https://github.com/users/saurabhs679/projects/5)
+- [Sprint 3 - Plan](https://github.com/users/saurabhs679/projects/3)
+
+### Core Feature: Candidate
+### Apply Jobs
+<img width="1510" alt="Screenshot 2023-07-31 at 21 03 12" src="https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/32255952/d15ad01c-4185-4286-8319-8ecdc7c1e40e">
+
+### Edit profile
+<img width="734" alt="Screenshot 2023-07-31 at 21 09 33" src="https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/32255952/4fd4a351-f724-4e77-b8a1-3651b7865953">
+
+### Upload resume
+<img width="1422" alt="Screenshot 2023-07-31 at 21 12 06" src="https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/32255952/43f8c43b-a93e-4548-a4e3-ef506b5ec45c">
+
+## Continuous integration, Setup test environment and prepare for tests
+
+### Snapshots of Continuous integration through GitHub actions: 
+
+### Snapshot of email notification for failed CI pipeline: 
+![Email](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/32255952/62d3fec7-9e27-4979-818f-5f240e174c40)
+
+### Snapshots of test (Passed and failed testcases)
+
+
+
 
 ## Snapshots of Features for Sprint 2:
 ## Home Page
