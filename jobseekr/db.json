@@ -131,13 +131,15 @@
     {
       "id": 1,
       "user_id": "a",
-      "Name": "dddTerry Ortega",
+      "Name": "Terry Ortega",
       "email": "terryortega@newcube.com",
       "age": 27,
       "gender": "female",
       "resume": "Anim ad ad deserunt dolor consectetur quis excepteur aute nostrud. Nisi veniam enim commodo laboris aliquip aliqua pariatur enim laborum consequat exercitation. Sint incididunt aliqua proident nisi eu duis qui nostrud mollit laborum duis laboris proident est.\r\n",
       "currentPosition": "Python Developer",
-      "skills": ["Python"],
+      "skills": [
+        "Python"
+      ],
       "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
@@ -153,7 +155,12 @@
       "gender": "female",
       "resume": "Laboris sint qui ad sint ea do aliquip reprehenderit culpa quis consectetur est. Commodo in ut ex exercitation velit mollit. Sit mollit ad elit occaecat anim consequat consequat eu ipsum aute voluptate aute nisi deserunt. Proident veniam ad et tempor. Proident pariatur ipsum proident veniam magna exercitation cupidatat excepteur adipisicing reprehenderit dolore eu veniam fugiat. Sunt elit eu voluptate consequat culpa laboris enim ex ea.\r\n",
       "currentPosition": "Devops Engineer",
-      "skills": ["AWS", "Github", "Docker", "Splunk"],
+      "skills": [
+        "AWS",
+        "Github",
+        "Docker",
+        "Splunk"
+      ],
       "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
@@ -168,7 +175,10 @@
       "gender": "female",
       "resume": "Tempor est quis mollit exercitation ipsum esse laborum et esse reprehenderit velit proident labore proident. Veniam eiusmod eiusmod dolor reprehenderit proident ut cupidatat dolore sunt sit anim. Magna nostrud deserunt adipisicing duis exercitation officia. Aute sint minim anim aute elit nulla consequat ex sit quis irure sit occaecat. Exercitation minim non sunt velit proident occaecat cupidatat consectetur voluptate cillum magna exercitation. Ex laboris aliquip in culpa enim et reprehenderit esse veniam aliquip ex aliquip sunt.\r\n",
       "currentPosition": "DBA Admin",
-      "skills": ["SQL" , "Postgresql"],
+      "skills": [
+        "SQL",
+        "Postgresql"
+      ],
       "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         2,
@@ -184,7 +194,11 @@
       "gender": "male",
       "resume": "Eu ex nostrud fugiat Lorem deserunt ut aliquip fugiat aliqua excepteur est duis ullamco. Laborum sit ipsum nulla nisi. Laborum veniam Lorem Lorem magna. Ad ea sit nostrud ad consequat ut fugiat non irure.\r\n",
       "currentPosition": "Java Developer",
-      "skills": ["Java", "SpringBoot", "MVC"],
+      "skills": [
+        "Java",
+        "SpringBoot",
+        "MVC"
+      ],
       "address": "2000 Blvd Maisoneuvenue",
       "jobsApplied": [
         1,
@@ -202,7 +216,10 @@
       "resume": "Do mollit laborum excepteur in non proident laboris. Veniam cillum officia et enim nisi in nisi ipsum et proident eu. Deserunt elit ex tempor cillum nulla in culpa consequat. Ullamco sit fugiat elit pariatur proident do. Ad consectetur eu non laboris nostrud consectetur consequat consectetur. Irure dolore quis aute cupidatat et ea est sit eu occaecat eiusmod magna. Duis aliqua proident aliquip amet aliquip duis proident ullamco commodo exercitation.\r\n",
       "currentPosition": "Business Analyst",
       "address": "2000 Blvd Maisoneuvenue",
-      "skills": ["Excel", "PowerBI"],
+      "skills": [
+        "Excel",
+        "PowerBI"
+      ],
       "jobsApplied": [
         1,
         3,
@@ -233,13 +250,34 @@
         6,
         4
       ]
+    },
+    {
+      "id": 7,
+      "user_id": "supra",
+      "Name": "Supra",
+      "email": "suprarockzzz@gmail.com",
+      "age": "29",
+      "gender": "",
+      "resume": "",
+      "currentPosition": "",
+      "skills": [],
+      "address": "gumnaam",
+      "jobsApplied": [
+        2,
+        2
+      ]
     }
   ],
   "jobs": [
     {
       "id": 2,
       "title": "Devops Engineer",
-      "skills": ["docker", "github", "splunk", "AWS"],
+      "skills": [
+        "docker",
+        "github",
+        "splunk",
+        "AWS"
+      ],
       "jobtype": "fulltime",
       "salary": "150000",
       "applicationdeadline": "2023-07-18T20:26",
@@ -250,7 +288,10 @@
     {
       "id": 3,
       "title": "business analyst",
-      "skills": ["PowerBI", "Excel"],
+      "skills": [
+        "PowerBI",
+        "Excel"
+      ],
       "jobtype": "fulltime",
       "salary": "120000",
       "applicationdeadline": "2023-07-22T21:39",
@@ -261,7 +302,9 @@
     {
       "id": 4,
       "title": "android",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "jobtype": "fulltime",
       "salary": "25000",
       "applicationdeadline": "",
@@ -272,7 +315,10 @@
     {
       "id": 5,
       "title": "Software Engineer",
-      "skills": ["Agile", "jira"],
+      "skills": [
+        "Agile",
+        "jira"
+      ],
       "jobtype": "fulltime",
       "salary": "200000",
       "applicationdeadline": "2023-07-21T22:03",
@@ -282,7 +328,11 @@
     },
     {
       "title": "react deve",
-      "skills": ["react", "dom", "js"],
+      "skills": [
+        "react",
+        "dom",
+        "js"
+      ],
       "jobtype": "fulltime",
       "salary": "25000",
       "applicationdeadline": "",

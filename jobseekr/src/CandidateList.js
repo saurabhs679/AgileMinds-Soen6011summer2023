@@ -11,7 +11,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove, userrole }) => {
     const handleedit = () => {
       console.log(userRole);
         if(userRole === "employer"){
-        toast.success('Called for interview')
+        toast.success('Email notification has been sent to candidate')
         }
         else{
             toast.warning('You are not having access for Edit');
@@ -35,7 +35,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove, userrole }) => {
         <p><b>GENDER</b>: {candidate.gender}</p>
         <p><b>CURRENT POSITION</b>: {candidate.currentPosition}</p>
         <p><b>SKILLS</b>: {candidate.skills}</p>
-        <button onClick={handleedit} className="btn btn-primary btn-spaces">Call for Interview</button> 
+        <button onClick={handleedit} className="btn btn-primary btn-spaces">Invite</button> 
         <button onClick={handleremove} className="btn btn-danger">Reject</button>
       </div>
     );
