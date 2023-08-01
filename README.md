@@ -124,6 +124,8 @@ A Sprint plan is available under
 
 ![WhatsApp Image 2023-07-31 at 9 21 36 PM](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/50517164/2a470ba4-51fe-47be-a8fb-f92341aa460e)
 
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/50517164/822a85d3-8ce3-4549-b0f3-edb4e48f61a5)
+
 
 ### Snapshots of Continuous integration through GitHub actions: 
 
