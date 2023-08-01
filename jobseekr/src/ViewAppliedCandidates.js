@@ -10,15 +10,29 @@ const ViewAppliedCandidates = () => {
     const [haveview, viewchange] = useState(true);
     const [haveadd, addchange] = useState(true);
     const [haveremove, removechange] = useState(true);
-
+    const [job, updateJob] = useState("")
     const navigate=useNavigate();
 
-
+    const [applicantStatus, updateApplicantStatus] = useState("")
     useEffect(() => {
        // GetUserAccess();
         loadcandidate();
+        loadjobs()
     }, []);
-
+    const loadjobs = () =>{
+        fetch("http://localhost:8000/jobs/" + Number(id)).then(res => {
+         
+            if (!res.ok) {
+                return false
+            }
+            return res.json();
+        }).then(res => {
+            updateJob(res)
+            if(res.applicantsStatus !== ""){
+                updateApplicantStatus(res.applicantsStatus)
+            }
+        });
+    }
     const loadcandidate = () => {
         fetch("http://localhost:8000/Candidates").then(res => {
             if (!res.ok) {
@@ -80,7 +94,36 @@ const ViewAppliedCandidates = () => {
             toast.warning('You are not having access for remove');
         }
     }
+    const accept = (user_id) =>{
+        console.log("candicate called for interview")
+        let new_job = {...job, applicantsStatus: [...job.applicantsStatus, {[user_id]: 1}]}
+        fetch("http://localhost:8000/jobs/" + job.id, {
+                method: "PUT",
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(new_job)
+            }).then((res) => {
+                toast.success("Candidate called for an Interview.")
+                navigate('/jobview');
+            }).catch((err) => {
+                toast.error('Failed :' + err.message);
+            });
 
+    }
+    const reject = (id) =>{
+        let new_obj = {[id]:1}
+        
+        let new_job = {...job, applicantsStatus: [...job.applicantsStatus, {[id]: 2}]}
+        fetch("http://localhost:8000/jobs/" + job.id, {
+                method: "PUT",
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(new_job)
+            }).then((res) => {
+                toast.success('Candidate Rejected.')
+                navigate('/jobview');
+            }).catch((err) => {
+                toast.error('Failed :' + err.message);
+            });
+    }
 
     // const Candidate = ({ candidate }) => {
     //     return (
@@ -104,7 +147,7 @@ const ViewAppliedCandidates = () => {
       <div className="card-container">
           
           {candlist.map(candidate => (
-          <CandidateList key={candidate.id} candidate={candidate} haveedit={haveedit} haveremove={haveremove}/>
+          <CandidateList key={candidate.id} candidate={candidate} haveedit={haveedit} haveremove={haveremove} onAccept={accept} onReject={reject} applicantStatus={applicantStatus}/>
         ))}
           
           

@@ -42,7 +42,7 @@ const Addjobs = () => {
             console.log("sadsdf");
             e.preventDefault();
             const employer = sessionStorage.getItem('username') != null ? sessionStorage.getItem('username').toString() : '';
-            let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable, employer};
+            let regobj = { title, skills, jobtype, salary, applicationdeadline, applicants, positionsavailable, employer, applicantsStatus:[]};
             if (IsValidate()) {
             fetch("http://localhost:8000/jobs", {
                 method: "POST",
