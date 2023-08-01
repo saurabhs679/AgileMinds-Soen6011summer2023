@@ -95,7 +95,7 @@ const ViewAppliedCandidates = () => {
         }
     }
     const accept = (user_id) =>{
-        console.log("candicate called for interview")
+        //console.log("candicate called for interview")
         let new_job = {...job, applicantsStatus: [...job.applicantsStatus, {[user_id]: 1}]}
         fetch("http://localhost:8000/jobs/" + job.id, {
                 method: "PUT",

@@ -16,7 +16,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove, onAccept, onReject, a
     const handleedit = () => {
         if(haveedit){
           onAccept(candidate.user_id)
-        toast.success('Called for interview')
+        toast.success('Email notification has been sent to candidate')
         }
         else{
             toast.warning('You are not having access for Edit');
@@ -33,11 +33,11 @@ const CandidateList = ({ candidate,  haveedit, haveremove, onAccept, onReject, a
     }
 
     let buttons = <>
-    <button onClick={handleedit} className="btn btn-primary btn-spaces">Call for Interview</button>
+    <button onClick={handleedit} className="btn btn-primary btn-spaces">Invite</button>
     <button onClick={handleremove} className="btn btn-danger">Reject</button>
     </> 
     if(value === 1){
-      buttons = <button className="btn btn-primary btn-spaces">Called for Interview</button>
+      buttons = <button className="btn btn-primary btn-spaces">Invite</button>
     }
     if(value === 2){
       buttons = <button className="btn btn-danger">Already rejected</button> 
