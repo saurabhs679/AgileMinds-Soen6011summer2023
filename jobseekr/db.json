@@ -150,6 +150,7 @@
     {
       "id": 2,
       "Name": "Maude Holcomb",
+      "user_id": "abbbb",
       "email": "maudeholcomb@newcube.com",
       "age": 50,
       "gender": "female",
@@ -170,6 +171,7 @@
     {
       "id": 3,
       "Name": "Rosanna Tyson",
+      "user_id": "a",
       "email": "rosannatyson@newcube.com",
       "age": 32,
       "gender": "female",
@@ -189,6 +191,7 @@
     {
       "id": 4,
       "Name": "Shepard Stanley",
+      "user_id": "azzzz",
       "email": "shepardstanley@newcube.com",
       "age": 35,
       "gender": "male",
@@ -210,6 +213,7 @@
     {
       "id": 5,
       "Name": "Rey Buchanan",
+      "user_id": "adddd",
       "email": "rhondabuchanan@newcube.com",
       "age": 56,
       "gender": "male",
@@ -264,7 +268,6 @@
       "address": "gumnaam",
       "jobsApplied": [
         2,
-        2
       ]
     }
   ],
@@ -283,6 +286,7 @@
       "applicationdeadline": "2023-07-18T20:26",
       "applicants": "12",
       "positionsavailable": "2",
+      "applicantsStatus": "",
       "employer": "madhava"
     },
     {
@@ -297,6 +301,7 @@
       "applicationdeadline": "2023-07-22T21:39",
       "applicants": "12",
       "positionsavailable": "2",
+      "applicantsStatus": "",
       "employer": "papry"
     },
     {
@@ -310,6 +315,11 @@
       "applicationdeadline": "",
       "applicants": "2",
       "positionsavailable": "2",
+      "applicantsStatus": [
+        {
+          "akella": 1
+        }
+      ],
       "employer": "srikar"
     },
     {
@@ -324,6 +334,14 @@
       "applicationdeadline": "2023-07-21T22:03",
       "applicants": "10",
       "positionsavailable": "5",
+      "applicantsStatus": [
+        {
+          "abbbb": 1
+        },
+        {
+          "a": 1
+        }
+      ],
       "employer": "saurabh"
     },
     {
@@ -338,6 +356,7 @@
       "applicationdeadline": "",
       "applicants": "2",
       "positionsavailable": "2",
+      "applicantsStatus": "",
       "employer": "srikar",
       "id": 6
     }
