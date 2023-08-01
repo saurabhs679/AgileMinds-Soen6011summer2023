@@ -122,6 +122,9 @@ A Sprint plan is available under
 
 ## Continuous integration, Setup test environment and prepare for tests
 
+![WhatsApp Image 2023-07-31 at 9 21 36 PM](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/50517164/2a470ba4-51fe-47be-a8fb-f92341aa460e)
+
+
 ### Snapshots of Continuous integration through GitHub actions: 
 
 ### Snapshot of email notification for failed CI pipeline: 
@@ -129,7 +132,9 @@ A Sprint plan is available under
 
 ### Snapshots of test (Passed and failed testcases)
 
+![WhatsApp Image 2023-07-31 at 9 19 09 PM](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/50517164/4168c9cc-e543-4e79-a664-abb4e9b0d769)
 
+![WhatsApp Image 2023-07-31 at 9 19 01 PM](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/50517164/f7c86151-14d9-4418-94ce-afe0c123522b)
 
 
 ## Snapshots of Features for Sprint 2:
