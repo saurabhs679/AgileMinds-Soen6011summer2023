@@ -167,7 +167,7 @@ const CandidateAppliedJobs = () => {
             <button onClick={handleremove} className="btn btn-danger" value={jobs.id}>Remove</button></>
         if(userrole === "candidate"){
             buttons = <>
-            <button onClick={(e)=>{applyApplication((jobs.id))}} className="btn btn-primary btn-spaces">Apply</button> 
+            <button onClick={(e)=>{applyApplication((jobs.id))}} className="btn btn-primary btn-spaces">Edit application</button> 
             </>
         }
         return (

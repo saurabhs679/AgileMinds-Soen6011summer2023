@@ -13,7 +13,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove, onAccept, onReject, a
     }
     
   }
-    const handleedit = () => {
+const handleedit = () => {
         if(haveedit){
           onAccept(candidate.user_id)
         toast.success('Email notification has been sent to candidate')
@@ -43,7 +43,7 @@ const CandidateList = ({ candidate,  haveedit, haveremove, onAccept, onReject, a
       buttons = <button className="btn btn-danger">Already rejected</button> 
     }
     return (
-      <div className="card">
+ <div className="card">
         
         <h5>{candidate.Name}</h5>
         <p><b>NAME</b>: {candidate.Name}</p>

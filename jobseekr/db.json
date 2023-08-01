@@ -131,7 +131,7 @@
     {
       "id": 1,
       "user_id": "a",
-      "Name": "dddTerry Ortega",
+      "Name": "Terry Ortega",
       "email": "terryortega@newcube.com",
       "age": 27,
       "gender": "female",
@@ -267,7 +267,7 @@
       "skills": [],
       "address": "gumnaam",
       "jobsApplied": [
-        2
+        2,
       ]
     }
   ],
