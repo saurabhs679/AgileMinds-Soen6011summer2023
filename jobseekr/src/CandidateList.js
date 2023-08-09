@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 const CandidateList = ({ candidate,  haveedit, haveremove, onAccept, onReject, applicantStatus }) => {
   
   let value = applicantStatus
-  if(applicantStatus !== ""){
+  if(applicantStatus){
     
     value = applicantStatus.filter(e =>{  return e[`${candidate.user_id}`]})[0]
     if(value !== undefined){

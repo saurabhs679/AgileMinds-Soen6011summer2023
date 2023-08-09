@@ -87,6 +87,17 @@
       "address": "",
       "gender": "",
       "role": "candidate"
+    },
+    {
+      "id": "SAURABH SHARMA",
+      "name": "SAURABH SHARMA",
+      "password": "",
+      "email": "saurabhs679@gmail.com",
+      "phone": null,
+      "country": "",
+      "address": "",
+      "gender": "",
+      "role": "candidate"
     }
   ],
   "roleaccess": [
@@ -275,10 +286,30 @@
       "gender": "",
       "resume": "",
       "currentPosition": "",
-      "skills": [],
-      "address": "gumnaam",
+      "skills": [
+        "java",
+        "marketing"
+      ],
+      "address": "Montreal",
       "jobsApplied": [
-        2
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "id": 8,
+      "user_id": "SAURABH SHARMA",
+      "Name": "",
+      "email": "",
+      "age": "",
+      "gender": "",
+      "resume": "",
+      "currentPosition": "",
+      "skills": [],
+      "address": "",
+      "jobsApplied": [
+        3
       ]
     }
   ],
@@ -316,8 +347,7 @@
       "employer": "papry"
     },
     {
-      "id": 4,
-      "title": "android",
+      "title": "Android Developer",
       "skills": [
         "python"
       ],
@@ -326,12 +356,9 @@
       "applicationdeadline": "",
       "applicants": "2",
       "positionsavailable": "2",
-      "applicantsStatus": [
-        {
-          "akella": 1
-        }
-      ],
-      "employer": "srikar"
+      "employer": "srikar",
+      "applicantsStatus": [],
+      "id": 4
     },
     {
       "id": 5,
@@ -356,19 +383,15 @@
       "employer": "saurabh"
     },
     {
-      "title": "react deve",
-      "skills": [
-        "react",
-        "dom",
-        "js"
-      ],
+      "title": "React Developer",
+      "skills": "react, dom, JS",
       "jobtype": "fulltime",
       "salary": "25000",
       "applicationdeadline": "",
       "applicants": "2",
       "positionsavailable": "2",
-      "applicantsStatus": "",
       "employer": "srikar",
+      "applicantsStatus": [],
       "id": 6
     }
   ]
