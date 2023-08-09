@@ -102,9 +102,39 @@ React is a popular JavaScript library used for building user interfaces in web d
 
 The Backend, the System will employ file-based storage to manage static data using JavaScript and Node.Js. This static data will be represented as objects and stored within files. The purpose of storing this data in files is to facilitate data presentation and data persistence. The System will read the data from these files to display it to the users, and it will also save any changes or new data by writing the updated objects back to the files. This approach allows for efficient retrieval and storage of static data, ensuring that the System can effectively showcase and maintain the information it contains.
 
-## Upcoming Sprint: Sprint 4
+## Completed Sprint: Sprint 4
 A Sprint plan is available under  
 - [Sprint 4- Plan](https://github.com/users/saurabhs679/projects/4)
+
+## Additional Features:
+### Implemented Google Authentication for Candidate login
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/40b0b2b4-aeb7-4ba3-af91-f16803cffd8c)
+
+### Screenshot showing Google account available for login
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/4ffc26de-cd98-4ee3-bd56-f19e46e0a63c)
+
+### Updated User Interface with a modern look and feel
+### Landing Page
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/91930bc8-35e3-4288-b146-3ef183631ead)
+
+### User Registration
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/a41b1e41-f33c-4a1c-92d8-fe8f398ac020)
+
+### Apply Jobs
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/72b67ecc-8e7b-4a2c-8878-38f44088c746)
+
+### Add skills
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/0be15f45-0f47-4749-90e2-e8485dbebf54)
+
+### Job Listing
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/a250dde0-2532-45f2-b7fe-7e0fecfe0967)
+
+### Added Repository to Azure DevOps:
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/15e49294-8e07-4724-952e-c8cc963fc379)
+
+### Continous Integration with Pipelines
+![image](https://github.com/saurabhs679/AgileMinds-Soen6011summer2023/assets/113655705/1f7a7bed-4b26-431e-ace6-e71adb7f7086)
+This screenshot shows the artifact successfully created after continuous integration. This artifact can be used to create a release for continuous deployment. However, as Azure Free Subscription does not allow these privileges we cannot progress with deploying it.
 
 ## Completed Sprint: Sprint 3  
 A Sprint plan is available under  
