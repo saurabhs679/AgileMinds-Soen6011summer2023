@@ -76,6 +76,17 @@
       "address": "fsfs",
       "gender": "male",
       "role": "candidate"
+    },
+    {
+      "id": "Srikar H",
+      "name": "Srikar H",
+      "password": "",
+      "email": "hsrikar99@gmail.com",
+      "phone": null,
+      "country": "",
+      "address": "",
+      "gender": "",
+      "role": "candidate"
     }
   ],
   "roleaccess": [

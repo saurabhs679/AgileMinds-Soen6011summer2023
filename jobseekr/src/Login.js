@@ -1,19 +1,112 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup } from "firebase/auth";
+import btn_google_signin_dark_normal_web from './btn_google_signin_dark_normal_web@2x.png';
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBljAzxVq9jbcZ3A9DohPZTu54yfgTlcNk",
+  authDomain: "jobseekr-ca0de.firebaseapp.com",
+  projectId: "jobseekr-ca0de",
+  storageBucket: "jobseekr-ca0de.appspot.com",
+  messagingSenderId: "39266223549",
+  appId: "1:39266223549:web:8994521735439b606f3ed4",
+  measurementId: "G-LBP90201C5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 
 const Login = () => {
     const [username, usernameupdate] = useState('');
     const [password, passwordupdate] = useState('');
 
-    const usenavigate=useNavigate();
-
+    const usenavigate = useNavigate();
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    
+    const logg = ()=>{
+        signInWithPopup(auth, provider).then((result) => {
+            
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+            // The signed-in user info.
+            const user = result.user;
+            console.log("aaaa",user);
+            fetch("http://localhost:8000/user/").then((res) => {
+                return res.json();
+            }).then((resp) => {
+                console.log(resp)
+                const userPresent = resp.filter((e)=>{
+                        return e.username == user.displayName;
+                }).length>0;
+                    if (userPresent) {
+                        toast.success('Success');
+                        sessionStorage.setItem('username',resp.username);
+                        sessionStorage.setItem('userrole',resp.role);
+                        usenavigate('/')
+                    }else{
+                        let regobj = 
+                        {
+                            "id": user.displayName,
+                            "name": user.displayName,
+                            "password": "",
+                            "email": user.email,
+                            "phone": user.phoneNumber,
+                            "country": "",
+                            "address": "",
+                            "gender": "",
+                            "role": "candidate"
+                          };
+                        //console.log(regobj);
+                        fetch("http://localhost:8000/user", {
+                            method: "POST",
+                            headers: { 'content-type': 'application/json' },
+                            body: JSON.stringify(regobj)
+                        }).then((res) => {
+                            toast.success('Success');
+                            sessionStorage.setItem('username',user.displayName);
+                            sessionStorage.setItem('userrole',"candidate");
+                            usenavigate('/')
+                        }).catch((err) => {
+                            toast.error('Failed :' + err.message);
+                        });
+                    }
+            }).catch((err) => {
+                toast.error('Login Failed due to :' + err.message);
+            });
+            // IdP data available using getAdditionalUserInfo(result)
+            // ...
+          }).catch((error) => {
+            // Handle Errors here.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // The email of the user's account used.
+            const email = error.customData.email;
+            // The AuthCredential type that was used.
+            const credential = GoogleAuthProvider.credentialFromError(error);
+            // ...
+          });
+    }
     useEffect(()=>{
 sessionStorage.clear();
     },[]);
+    
 
     const ProceedLogin = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         if (validate()) {
             ///implentation
             // console.log('proceed');
@@ -92,8 +185,8 @@ sessionStorage.clear();
     }
     return (
         <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
-                <form onSubmit={ProceedLogin} className="container">
+            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px', height: '100vh' }}>
+                <form className="container">
                     <div className="card">
                         <div className="card-header">
                             <h2>User Login</h2>
@@ -109,8 +202,13 @@ sessionStorage.clear();
                             </div>
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Login</button> |
+                            <div onClick={ProceedLogin} className="btn btn-primary" style={{ marginRight: '15px' }}>Login</div> 
                             <Link className="btn btn-success" to={'/register'}>New User</Link>
+                            <div style={{ marginLeft: '15%' }}> or </div>
+                            <div onClick={logg} >
+                            <img src={btn_google_signin_dark_normal_web} alt="login with google" style={{ height: '50px' }}/>
+                            </div>
+
                         </div>
                     </div>
                 </form>
